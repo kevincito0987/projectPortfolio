@@ -58,7 +58,7 @@ header {
   justify-content: center;
   gap: 10px;
   border-radius: 99px;
-  color: var(--color-3);
+  color: var(--color-1);
   background: var(--color-38);
   cursor: pointer;
   text-decoration: none;
