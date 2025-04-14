@@ -50,3 +50,43 @@
   --color-49: #FFFFFF07;
   --color-50: #FFFFFF04;
 }
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(../assets/fonts/Inter/static/Inter_18pt-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url(../assets/fonts/Inter/static/Inter_18pt-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(../assets/fonts/Inter/static/Inter_28pt-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Barlow-SemiBold";
+  src: url(../assets/fonts/Barlow/Barlow-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Barlow-Bold";
+  src: url(../assets/fonts/Barlow/Barlow-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Barlow-Regular";
+  src: url(../assets/fonts/Barlow/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Sofia_Sans-Light";
+  src: url(../assets/fonts/Sofia_Sans/static/SofiaSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "Sofia_Sans-Bold";
+  src: url(../assets/fonts/Sofia_Sans/static/SofiaSans-Bold.ttf);
+}
