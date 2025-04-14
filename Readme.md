@@ -20,9 +20,13 @@ Este portafolio marca el comienzo de tu huella digital en el mundo tech.
 ## 🎯 Objetivo del Proyecto
 
 ✅ Crear una **One Page Web** moderna
+
  ✅ Seguir un diseño base desde Figma
+
  ✅ Hacerla totalmente **responsive**
+
  ✅ Aplicar buenas prácticas de desarrollo
+ 
  ✅ Desplegarla en línea para mostrar al mundo de qué estás hecho
 
 ------
