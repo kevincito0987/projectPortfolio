@@ -92,12 +92,55 @@ Este portafolio marca el comienzo de tu huella digital en el mundo tech.
 
 ------
 
+## 🧠 Patrón de Diseño
+
+### 🎯 **Separation of Concerns (SoC)**
+
+Este proyecto sigue el principio de **Separación de Responsabilidades**, un patrón que organiza el código dividiendo claramente su funcionalidad en capas distintas.
+
+**🧱 Estructura de ejemplo:**
+
+```
+cssCopiarEditar/project-root
+│
+├── index.html       ← Estructura y contenido
+├── styles/
+│   └── main.css     ← Estilos visuales
+├── scripts/
+│   └── main.js      ← Comportamientos e interacciones
+└── assets/
+    └── images/      ← Imágenes optimizadas
+```
+
+**✅ Aplicación práctica:**
+
+- **HTML (`index.html`)**
+  - Estructura la página usando etiquetas semánticas: `<header>`, `<main>`, `<section>`, `<footer>`.
+  - No usar estilos ni scripts directamente embebidos aquí.
+- **CSS (`styles/main.css`)**
+  - Todos los estilos deben ir aquí. Usa variables CSS si necesitas temas.
+  - Mantener la coherencia con la guía de estilo del diseño en Figma.
+- **JavaScript (`scripts/main.js`)**
+  - Aquí colocar las interacciones como scrolls suaves, animaciones, o validaciones.
+  - Cada función debe hacer una sola cosa, con nombres claros.
+- **Imágenes (`assets/images/`)**
+  - Usar formatos comprimidos (preferentemente `.webp`) y nómbralas según su propósito (`hero-img.webp`, `avatar-kevin.webp`, etc.)
+
+**🎯 Beneficios:**
+
+- Código más legible y mantenible
+- Facilita la escalabilidad del proyecto
+- Cada archivo tiene su propósito claro
+- Reduce errores por mezcla de lógica y presentación
+
+------
+
 ## 🌐 Despliegue
 
 Este portafolio está disponible públicamente aquí:
  🔗 https://kevincito0987.github.io/tu-repo
 
-> *(Reemplaza `tu-repo` con el nombre real de tu repositorio)*
+> *Comparte tu trabajo con el mundo. Tu código merece ser visto, no escondido.* 🌍🚀
 
 ------
 
