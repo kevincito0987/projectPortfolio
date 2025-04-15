@@ -720,11 +720,95 @@ main {
 .card-projects {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 40px;
   padding: 23.31px 0px 6.65px 0px;
   width: 1018px;
   height: 879px;
   border-radius: 22px;
-  background: sandybrown;
+  margin-top: 30px;
   position: relative; /* Mantiene el posicionamiento */
+}
+
+.card1 {
+  display: flex;
+  flex-direction: row;
+  padding: 22.6px 20px 26.6px 20px;
+  gap: 80px;
+  width: 1018px;
+  height: 308px;
+}
+
+.card-image1 {
+  width: 430px;
+  height: 254px;
+  border-radius: 16px;
+  margin: 26.50px 0;
+  background-image: url(../assets/images/project1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-image2 {
+  width: 430px;
+  height: 254px;
+  border-radius: 16px;
+  margin: 26.50px 0;
+  background-image: url(../assets/images/project2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-image3 {
+  width: 430px;
+  height: 254px;
+  border-radius: 16px;
+  margin: 26.50px 0;
+  background-image: url(../assets/images/Mockup.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 578px;
+  height: 307px;
+}
+
+.card-content1 img {
+  width: 30px;
+  height: 30px;
+}
+
+.card-title1 {
+  font-family: "Inter-Bold";
+  font-size: 36px;
+  color: var(--color-1);
+}
+
+.card-text {
+  font-family: "Inter-Bold";
+  font-size: 24px;
+  color: var(--color-8);
+}
+
+.card-button {
+  font-family: "Inter-Bold";
+  font-size: 16px;
+  color: var(--color-1);
+  background: var(--color-47);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 44px;
+  border-radius: 29px;
+}
+
+.card-button:hover {
+  background: var(--color-40);
+  color: var(--color-3);
 }
