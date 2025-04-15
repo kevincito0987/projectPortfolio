@@ -12,6 +12,7 @@ class CertificationList extends HTMLElement {
                     flex-direction: column;
                     gap: 10px;
                     margin-top: 10px;
+                    width: 200px;
                 }
                 .list-item {
                     text-decoration: none;
