@@ -290,18 +290,40 @@ main {
 .empresasCertificadoras {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 64px;
   margin-top: 40px;
   width: 684px;
-  height: 100px;
   justify-content: center;
-  align-items: center;
-  gap: 64px;
+  align-items: flex-start; /* Permite que las listas se expandan hacia abajo */
 }
 
-.empresasCertificadoras img {
+.certificadora {
+  display: flex;
+  flex-direction: column; /* Asegura que las listas aparezcan debajo del ícono */
+  align-items: center;
+  gap: 10px;
+}
+
+.certificadora img {
   width: 60px;
   height: 60px;
+}
+
+.dynamic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%; /* Asegura que tome el ancho completo del contenedor padre */
+  margin-top: 10px; /* Separación del ícono */
+}
+
+.dynamic-list a {
+  text-decoration: none;
+  color: white; /* Color blanco para visibilidad */
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 4px; /* Bordes redondeados */
 }
 
 .linkBotones {
