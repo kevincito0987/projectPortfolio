@@ -660,7 +660,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 40px;
   width: 1018px;
   height: 119px;
   text-align: center;
@@ -677,4 +677,54 @@ main {
   font-family: "Inter-Regular";
   font-size: 24px;
   color: var(--color-36);
+}
+.textProjects {
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.filters a {
+  color: var(--color-40);
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  gap: 10px;
+}
+
+.filters img {
+  width: 30px;
+  height: 30px;
+}
+
+.filters a:hover {
+  color: var(--color-3);
+  background: var(--color-40);
+  border-radius: 50px;
+}
+
+.card-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 23.31px 0px 6.65px 0px;
+  width: 1018px;
+  height: 879px;
+  border-radius: 22px;
+  background: sandybrown;
+  position: relative; /* Mantiene el posicionamiento */
 }
