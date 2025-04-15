@@ -131,10 +131,10 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 60px 0;
+  margin: 20px 0px;
   gap: 80px;
+  width: 100%;
+  height: 100%;
 }
 
 .Section1 {
@@ -143,13 +143,15 @@ main {
   align-items: center;
   justify-content: center;
   gap: 40px;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0px;
 }
 
 .section1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start; /* Alinea los elementos al inicio */
   background: var(--color-49); /* Color base */
   gap: 50px; /* Espacio entre los elementos */
   padding: 20px;
@@ -651,4 +653,28 @@ main {
 .card-contentLinkedin a:hover {
   background: var(--color-40);
   color: var(--color-3);
+}
+
+.work3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 1018px;
+  height: 119px;
+  text-align: center;
+  position: relative; /* Mantiene el posicionamiento */
+}
+
+.work3 h2 {
+  font-family: "Inter-Bold";
+  font-size: 32px;
+  color: var(--color-1);
+}
+
+.work3 p {
+  font-family: "Inter-Regular";
+  font-size: 24px;
+  color: var(--color-36);
 }
