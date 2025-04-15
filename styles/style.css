@@ -328,9 +328,10 @@ main {
 
 .dynamic-list a {
   text-decoration: none;
-  color: white; /* Color blanco para visibilidad */
-  font-family: Arial, sans-serif;
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+  color: var(--color-1); /* Color blanco para visibilidad */
+  font-family: "Inter-Bold";
+  font-size: 16px;
+  background-color: var(--color-3); /* Fondo oscuro */
   padding: 5px 10px; /* Espaciado interno */
   border-radius: 4px; /* Bordes redondeados */
 }

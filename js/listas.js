@@ -15,14 +15,14 @@ class CertificationList extends HTMLElement {
                 }
                 .list-item {
                     text-decoration: none;
-                    color: white; 
-                    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+                    color: var(--color-1); 
                     padding: 5px 10px;
                     border-radius: 4px;
-                    font-family: Arial, sans-serif;
+                    font-family: "Inter-Bold";
+                    font-size: 16px;
                 }
                 .list-item:hover {
-                    background-color: rgba(255, 255, 255, 0.2); /* Efecto hover */
+                    background-color: var(--color-10);
                 }
             </style>
             <div class="list-container"></div>
@@ -38,7 +38,7 @@ class CertificationList extends HTMLElement {
             const link = document.createElement('a');
             link.classList.add('list-item');
             link.href = item.url || '#';
-            link.textContent = `Elemento ${index + 1}: ${item.name || 'Sin nombre'}`;
+            link.textContent = `Certificado ${index + 1}: ${item.name || 'Sin nombre'}`;
             listContainer.appendChild(link);
         });
     }
