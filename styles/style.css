@@ -67,12 +67,17 @@ header {
   justify-content: center;
   gap: 10px;
   border-radius: 99px;
-  color: var(--color-1);
+  color: var(--color-12);
   background: var(--color-38);
   cursor: pointer;
   text-decoration: none;
   width: 107px;
   height: 37px;
+}
+
+.Button:hover {
+  background: var(--color-22);
+  color: var(--color-38);
 }
 
 .Header {
@@ -110,8 +115,8 @@ header {
 
   .Header img {
     position: absolute;
-    top: 195px;
-    left: 690px;
+    top: 175px;
+    left: 340px;
   }
 
   .Header > h3 {
