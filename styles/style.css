@@ -134,6 +134,7 @@ main {
   align-items: center;
   justify-content: center;
   margin: 60px 0;
+  gap: 80px;
 }
 
 .Section1 {
@@ -335,4 +336,64 @@ main {
 
 .linkBotones a:nth-child(2) {
   width: 130px; 
+}
+
+.Section2-Work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.work1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.MainCardTech {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 353.24px;
+  height: 414px;
+  background-image: url(../assets/images/IconsTech.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; /* Asegura que los elementos hijos puedan posicionarse dentro */
+}
+
+.frases1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 23.31px 17px 6.65px 23.31px;
+  z-index: 2; /* Asegura que este elemento esté por encima */
+  width: 35 2px;
+  height: 129px;
+  background: linear-gradient(
+    to bottom,
+    rgba(35, 41, 59, 1) 0%, /* Color sólido #23293B al 100% de opacidad */
+    rgba(35, 41, 59, 0) 100% /* Color transparente #23293B al 0% de opacidad */
+  );
+  position: relative; /* Mantiene el posicionamiento */
+}
+
+
+.frases1 p:first-child {
+  font-family: "Inter-Bold";
+  font-size: 16.96px;
+  color: var(--color-8);
+}
+
+.frases1 p:last-child {
+  font-family: "Inter-Bold";
+  font-size: 28.26px;
+  color: var(--color-1);
+}
+
+.card-image {
+  width: 50px;
+  height: 50px;
 }
