@@ -895,3 +895,83 @@ main {
   font-size: 10px;
   color: var(--color-8);
 }
+
+.MacBookPro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/images/image3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 800px;
+  width: 1024px;
+  height: 295px;
+  position: relative; /* Mantiene el posicionamiento */
+}
+
+.comunications {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.OpenSource {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 60px;
+  width: 1018px;
+  height: 647px;
+  position: relative; /* Mantiene el posicionamiento */
+}
+
+.OpenSource h2 {
+  font-family: "Inter-Bold";
+  font-size: 64px;
+  color: var(--color-1);
+}
+
+.OpenSource p {
+  font-family: "Inter-Bold";
+  font-size: 24px;
+  color: var(--color-8);
+}
+
+footer {
+  display: flex;
+  margin: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 277px;
+  position: relative; /* Mantiene el posicionamiento */
+  margin-bottom: 90px; /* Añade 20px extra al margen inferior */
+}
+
+footer p {
+  font-family: "Inter-Bold";
+  font-size: 24px;
+  color: var(--color-8);
+}
+
+.messege {
+  display: flex;
+  padding: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.messege img {
+  width: 40px;
+  height: 40px;
+}
