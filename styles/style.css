@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: var(--color-12);
   color: var(--color-1);
@@ -116,7 +117,7 @@ header {
   .Header img {
     position: absolute;
     top: 175px;
-    left: 600px;
+    left: 460px;
   }
 
   .Header > h3 {
