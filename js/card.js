@@ -96,26 +96,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!filterType) return;
     
         document.querySelectorAll(".card1").forEach(card => {
-            card.style.display = "flex"; // Mantener estructura en fila
+            card.style.display = "flex";
         });
     
         if (filterType === "En Progreso") {
             document.querySelectorAll(".card1:not(#inprogress)").forEach(card => card.style.display = "none");
-    
-            // **Intercambiar contenido e imagen en la tarjeta "inprogress"**
             const cardInProgress = document.getElementById("inprogress");
     
             if (cardInProgress) {
                 const cardImage = cardInProgress.querySelector(".card-image");
                 const cardContent = cardInProgress.querySelector(".card-content1");
     
-                // **Verifica que los elementos existen antes de intentar moverlos**
                 if (cardImage && cardContent) {
-                    // Remover elementos antes de reinsertarlos
                     cardInProgress.removeChild(cardImage);
                     cardInProgress.removeChild(cardContent);
     
-                    // Agregar nuevamente en orden invertido
                     cardInProgress.appendChild(cardImage);
                     cardInProgress.appendChild(cardContent);
                 }
