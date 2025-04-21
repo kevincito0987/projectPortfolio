@@ -8,15 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
             titulo: "Exploring the Future of AI in Everyday Life",
             texto: "CampusLands",
             imagenClass: "card-image1",
-            enlace: "https://github.com/kevincito0987/AIProject",
-            invertirOrden: false
+            enlace: "https://github.com/kevincito0987/eCommerceClothingStore",
+            invertirOrden: true
         },
         {
             titulo: "Immersive UI Journey Through Gaming Interfaces",
-            texto: "Personal",
+            texto: "CampusLands",
             imagenClass: "card-image2",
-            enlace: "https://github.com/kevincito0987/GameUIProject",
-            invertirOrden: true
+            enlace: "https://github.com/kevincito0987/projectConcets",
+            invertirOrden: false
         }
     ];
 
@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             button.classList.add("card-button");
             button.href = proyecto.enlace;
             button.textContent = "Learn More";
+            button.target = "_blank"; // Ahora los enlaces se abren en una nueva pestaña
 
             cardContent.appendChild(icon);
             cardContent.appendChild(title);
@@ -78,8 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Si ya hay dos tarjetas generadas, cambiar su fondo dinámicamente
             if (tarjetasGeneradas.length === 2) {
-                tarjetasGeneradas[0].style.backgroundImage = "url('../assets/images/newImage1.jpg')";
-                tarjetasGeneradas[1].style.backgroundImage = "url('../assets/images/newImage2.jpg')";
+                tarjetasGeneradas[0].style.backgroundImage = "url('../assets/images/project4.png')";
+                tarjetasGeneradas[1].style.backgroundImage = "url('../assets/images/project5.png')";
             }
 
         }, index * 400);
