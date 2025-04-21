@@ -1,5 +1,3 @@
-console.log("Esta es la función de la tarjeta");
-
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".card-projects");
 
@@ -10,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             imagenClass: "card-image1",
             enlace: "https://github.com/kevincito0987/eCommerceClothingStore",
             invertirOrden: true,
-            id: "inprogress" // Se asignará a la primera tarjeta
+            id: "inprogress"
         },
         {
             titulo: "Immersive UI Journey Through Gaming Interfaces",
@@ -18,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             imagenClass: "card-image2",
             enlace: "https://github.com/kevincito0987/projectConcets",
             invertirOrden: false,
-            id: "future" // Se asignará a la última tarjeta
+            id: "future"
         }
     ];
 
@@ -29,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const card = document.createElement("div");
             card.classList.add("card1");
 
-            // Asignar el ID a la primera y última tarjeta
             if (proyecto.id) {
                 card.id = proyecto.id;
             }
@@ -56,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
             button.classList.add("card-button");
             button.href = proyecto.enlace;
             button.textContent = "Learn More";
-            button.target = "_blank"; // Abre en nueva pestaña
+            button.target = "_blank";
 
             cardContent.appendChild(icon);
             cardContent.appendChild(title);
@@ -81,10 +78,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.style.transition = "opacity 0.5s ease, transform 0.5s ease";
             }, 100);
 
-            // Guardar referencia de la tarjeta generada
             tarjetasGeneradas.push(cardImage);
 
-            // Cambiar el fondo de las dos últimas tarjetas generadas
             if (tarjetasGeneradas.length === 2) {
                 tarjetasGeneradas[0].style.backgroundImage = "url('../assets/images/project4.png')";
                 tarjetasGeneradas[1].style.backgroundImage = "url('../assets/images/project5.png')";
@@ -92,4 +87,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }, index * 400);
     });
+
+    
+    document.querySelector(".filters").addEventListener("click", (event) => {
+        event.preventDefault();
+        const filterType = event.target.closest("a")?.querySelector("p")?.textContent;
+    
+        if (!filterType) return;
+    
+        document.querySelectorAll(".card1").forEach(card => {
+            card.style.display = "flex"; // Mantener estructura en fila
+        });
+    
+        if (filterType === "En Progreso") {
+            document.querySelectorAll(".card1:not(#inprogress)").forEach(card => card.style.display = "none");
+    
+            // **Intercambiar contenido e imagen en la tarjeta "inprogress"**
+            const cardInProgress = document.getElementById("inprogress");
+    
+            if (cardInProgress) {
+                const cardImage = cardInProgress.querySelector(".card-image");
+                const cardContent = cardInProgress.querySelector(".card-content1");
+    
+                // **Verifica que los elementos existen antes de intentar moverlos**
+                if (cardImage && cardContent) {
+                    // Remover elementos antes de reinsertarlos
+                    cardInProgress.removeChild(cardImage);
+                    cardInProgress.removeChild(cardContent);
+    
+                    // Agregar nuevamente en orden invertido
+                    cardInProgress.appendChild(cardImage);
+                    cardInProgress.appendChild(cardContent);
+                }
+            }
+        } else if (filterType === "Futuros") {
+            document.querySelectorAll(".card1:not(#future)").forEach(card => card.style.display = "none");
+        }
+    });
+    
 });
