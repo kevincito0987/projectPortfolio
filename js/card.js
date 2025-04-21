@@ -9,16 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
             texto: "CampusLands",
             imagenClass: "card-image1",
             enlace: "https://github.com/kevincito0987/AIProject",
-            invertirOrden: false // Mantiene el orden normal
+            invertirOrden: false
         },
         {
             titulo: "Immersive UI Journey Through Gaming Interfaces",
             texto: "Personal",
             imagenClass: "card-image2",
             enlace: "https://github.com/kevincito0987/GameUIProject",
-            invertirOrden: true // Invierte el orden para la última tarjeta
+            invertirOrden: true
         }
     ];
+
+    let tarjetasGeneradas = [];
 
     proyectos.forEach((proyecto, index) => {
         setTimeout(() => {
@@ -26,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.classList.add("card1");
 
             const cardImage = document.createElement("div");
-            cardImage.classList.add(proyecto.imagenClass);
+            cardImage.classList.add("card-image", proyecto.imagenClass);
 
             const cardContent = document.createElement("div");
             cardContent.classList.add("card-content1");
@@ -48,13 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
             button.href = proyecto.enlace;
             button.textContent = "Learn More";
 
-            // Estructura de la tarjeta
             cardContent.appendChild(icon);
             cardContent.appendChild(title);
             cardContent.appendChild(text);
             cardContent.appendChild(button);
 
-            // Si es la última tarjeta y debe cambiar el orden, invertimos la estructura
             if (proyecto.invertirOrden) {
                 card.appendChild(cardContent);
                 card.appendChild(cardImage);
@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.appendChild(cardContent);
             }
 
-            // Animación suave al agregar la tarjeta
             card.style.opacity = "0";
             card.style.transform = "translateY(20px)";
             container.appendChild(card);
@@ -73,6 +72,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.style.transform = "translateY(0)";
                 card.style.transition = "opacity 0.5s ease, transform 0.5s ease";
             }, 100);
-        }, index * 400); // Agregar cada tarjeta con un pequeño retraso
+
+            // Guardar referencia de la tarjeta generada
+            tarjetasGeneradas.push(cardImage);
+
+            // Si ya hay dos tarjetas generadas, cambiar su fondo dinámicamente
+            if (tarjetasGeneradas.length === 2) {
+                tarjetasGeneradas[0].style.backgroundImage = "url('../assets/images/newImage1.jpg')";
+                tarjetasGeneradas[1].style.backgroundImage = "url('../assets/images/newImage2.jpg')";
+            }
+
+        }, index * 400);
     });
 });
