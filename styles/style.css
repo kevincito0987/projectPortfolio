@@ -702,6 +702,10 @@ main {
   position: relative; /* Mantiene el posicionamiento */
 }
 
+.campusLogo {
+  width: 150px;
+  height: 150px;
+}
 .work3 h2 {
   font-family: "Inter-Bold";
   font-size: 32px;
