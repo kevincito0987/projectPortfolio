@@ -9,14 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
             texto: "CampusLands",
             imagenClass: "card-image1",
             enlace: "https://github.com/kevincito0987/eCommerceClothingStore",
-            invertirOrden: true
+            invertirOrden: true,
+            id: "inprogress" // Se asignará a la primera tarjeta
         },
         {
             titulo: "Immersive UI Journey Through Gaming Interfaces",
-            texto: "CampusLands",
+            texto: "Personal",
             imagenClass: "card-image2",
             enlace: "https://github.com/kevincito0987/projectConcets",
-            invertirOrden: false
+            invertirOrden: false,
+            id: "future" // Se asignará a la última tarjeta
         }
     ];
 
@@ -26,6 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             const card = document.createElement("div");
             card.classList.add("card1");
+
+            // Asignar el ID a la primera y última tarjeta
+            if (proyecto.id) {
+                card.id = proyecto.id;
+            }
 
             const cardImage = document.createElement("div");
             cardImage.classList.add("card-image", proyecto.imagenClass);
@@ -49,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
             button.classList.add("card-button");
             button.href = proyecto.enlace;
             button.textContent = "Learn More";
-            button.target = "_blank"; // Ahora los enlaces se abren en una nueva pestaña
+            button.target = "_blank"; // Abre en nueva pestaña
 
             cardContent.appendChild(icon);
             cardContent.appendChild(title);
@@ -77,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Guardar referencia de la tarjeta generada
             tarjetasGeneradas.push(cardImage);
 
-            // Si ya hay dos tarjetas generadas, cambiar su fondo dinámicamente
+            // Cambiar el fondo de las dos últimas tarjetas generadas
             if (tarjetasGeneradas.length === 2) {
                 tarjetasGeneradas[0].style.backgroundImage = "url('../assets/images/project4.png')";
                 tarjetasGeneradas[1].style.backgroundImage = "url('../assets/images/project5.png')";
