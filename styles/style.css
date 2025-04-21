@@ -758,20 +758,23 @@ main {
   gap: 40px;
   padding: 23.31px 0px 6.65px 0px;
   width: 1018px;
-  height: 879px;
+  /* Eliminar la altura fija para permitir expansión dinámica */
+  min-height: 879px; /* Cambio de height a min-height */
   border-radius: 22px;
-  margin-top: 30px;
-  position: relative; /* Mantiene el posicionamiento */
+  margin-top: 10px;
+  position: relative;
 }
 
 .card1 {
   display: flex;
   flex-direction: row;
   padding: 22.6px 20px 26.6px 20px;
-  gap: 80px;
+  gap: 20px;
   width: 1018px;
-  height: 308px;
+  height: auto; /* Permitir que la altura crezca dinámicamente */
+  min-height: 308px; /* Mantener una altura mínima */
 }
+
 
 .card-image1 {
   width: 430px;
@@ -807,7 +810,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
   width: 578px;
   height: 307px;
 }
