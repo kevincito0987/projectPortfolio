@@ -122,9 +122,9 @@ header {
 
 /* 🖼️ Imagen posicionada dentro del header */
 .Header img {
-  position: relative;
-  top: 322px;
-  left: -50px;
+  position: absolute;
+  top: 177px;
+  left: 460px;
 }
 
 /* 📖 Texto descriptivo dentro del header */
