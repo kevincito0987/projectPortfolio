@@ -1,169 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Mi Portafolio Web</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- 🔗 Ícono de la página -->
-    <link rel="shortcut icon" href="./assets/icons/portfolioIcon.svg" type="image/x-icon">
-    
-    <!-- 🎨 Estilos -->
-    <link rel="stylesheet" href="./styles/style.css">
-    
-    <!-- 🛠️ Scripts -->
-    <script type="module" src="./js/certificaciones.js"></script>
-    <script type="module" src="./js/scroll.js" defer></script>
-    <script type="module" src="./js/card.js" defer></script>
-</head>
-<body>
-
-    <!-- 🎯 Barra de navegación -->
-    <header>
-        <section class="ToolBar">
-            <img src="./assets/icons/myLogo.svg" alt="Image preview profile">
-            <div class="center-Nav">
-                <a href="#certificaciones">Certificaciones</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#tecnologias">Tecnologías</a>
-            </div>
-            <a href="https://www.linkedin.com/in/kevin-stiven-angarita-131243203/" class="Button">
-                <span>Linked</span>
-                <img src="./assets/icons/inLogo.svg" alt="Image preview profile">
-            </a>
-        </section>
-
-        <!-- 🏆 Sección de presentación -->
-        <section class="Header">
-            <img src="./assets/images/Group3.png" alt="Image preview profile">
-            <div class="headerTitle">
-                <h1>CREATIVE DEVELOPER SINCE</h1>
-                <h1>2021</h1>
-            </div>
-            <h3>Over the last year, I have been working on a variety of projects, from designing and developing websites to creating mobile apps.</h3>
-            <p>Developing user-centric interfaces that captivate and engage audiences and make a real impact.</p>
-        </section>
-    </header>
-
-    <!-- 🏗️ Contenido principal -->
-    <main>
-        <section class="Section1">
-            <!-- 🎨 Sección de perfil -->
-            <div class="section1">
-                <div class="imageProfile">
-                    <img src="./assets/icons/myLogo.svg" alt="Image preview profile">
+    <head>
+        <title>Mi Portafolio Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="./assets/icons/portfolioIcon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/style.css">
+        <script type="module" src="./js/certificaciones.js"></script>
+        <script type="module" src="./js/scroll.js" defer></script>
+        <script type="module" src="./js/card.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <section class="ToolBar">
+                <img src="./assets/icons/myLogo.svg" alt="Image preview profile">
+                <div class="center-Nav">
+                    <a href="#certificaciones">Certificaciones</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#tecnologias">Tecnologías</a>
                 </div>
-                <div class="sec1-description">
-                    <div class="desc1">
-                        <p>Kevin S. Angarita</p>
-                        <div>
-                            <img src="./assets/icons/colombia.svg" alt="Colombia Icon">
+                <a href="https://www.linkedin.com/in/kevin-stiven-angarita-131243203/" class="Button">
+                    <span>Linked</span>
+                    <img src="./assets/icons/inLogo.svg" alt="Image preview profile">
+                </a>
+            </section>
+            <section class="Header">
+                <img src="./assets/images/Group3.png" alt="Image preview profile">
+                <div class="headerTitle">
+                    <h1>CREATIVE DEVELOPER SINCE</h1>
+                    <h1>2021</h1>
+                </div>
+                <h3>Over the last year, I have been working on a variety of projects, from designing and developing websites to creating mobile apps..</h3>
+                <p>Developing user-centric interfaces that captivate and engage audiences and make a real impact.</p>
+            </section>
+        </header>
+        <main>
+            <section class="Section1">
+                <div class="section1">
+                    <div class="imageProfile">
+                        <img src="./assets/icons/myLogo.svg" alt="Image preview profile">
+                    </div>
+                    <div class="sec1-description">
+                        <div class="desc1">
+                            <p>Kevin S. Angarita</p>
+                            <div>
+                                <img src="./assets/icons/colombia.svg" alt="Colombia Icon">
+                            </div>
+                        </div>
+                        <div class="sec2-description">
+                            <div class="rol">
+                                <img src="./assets/icons/laptop.svg" alt="computer icon">
+                                <p>Junior Software Developer</p>
+                            </div>
+                            <div class="location">
+                                <img src="./assets/icons/map-pin.svg" alt="location icon">
+                                <p>Colombia</p>
+                            </div>
+                            <div class="disponibilidad">
+                                <img src="./assets/icons/checkGreen.svg" alt="disponibilidad icon">
+                                <p>Available</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="sec2-description">
-                        <div class="rol">
-                            <img src="./assets/icons/laptop.svg" alt="computer icon">
-                            <p>Junior Software Developer</p>
+                    <div class="travel"></div>
+                </div>
+                <div class="myDescription">
+                    <img src="./assets/icons/Premio.svg" alt="Premio">
+                    <p>Junior Developer with several years of experience as a Freelancer. Multiple certifications. Passionate about traveling and naturally curious. Currently, I am focused on becoming a great leader and continuing to share.</p>
+                    <img src="./assets/icons/Premio2.svg" alt="Premio">
+                </div>
+                <div class="certificaciones" id="certificaciones">
+                    <h1>Certificaciones</h1>
+                    
+                    <div class="empresasCertificadoras">
+                        <!-- Contenedor de Cisco -->
+                        <div class="certificadora">
+                            <img src="./assets/icons/ciscoLogo.svg" alt="Cisco Logo" data-items='[
+                                {"name": "Cyber Threat Management", "url": "https://www.credly.com/badges/65f37156-48f3-4f05-9e7a-b5f72bcc2896/linked_in_profile"},
+                                {"name": "Endpoint Security", "url": "https://www.credly.com/badges/02d7642a-7a23-4525-9de4-335df981d3e1/linked_in_profile"},
+                                {"name": "Network Defense", "url": "https://www.credly.com/badges/288954f1-0017-45c5-aabd-42c6aba500bf/linked_in_profile"},
+                                {"name": "Introduction to Cybersecurity", "url": "https://www.credly.com/badges/02a4edf7-5823-4fd9-b9f1-dc69f0f21129/linked_in_profile"}
+                            ]'>
                         </div>
-                        <div class="location">
-                            <img src="./assets/icons/map-pin.svg" alt="location icon">
-                            <p>Colombia</p>
+                        <!-- Contenedor de Desafio Latam -->
+                        <div class="certificadora">
+                            <img src="./assets/icons/desafioLatamLogo.svg" alt="Desafio Latam Logo" data-items='[
+                                {"name": " Introducción al Desarrollo Web", "url": "https://cursos.desafiolatam.com/certificates/hhkcrp0wyd"},
+                                {"name": "Bases de Git y Github", "url": "https://cursos.desafiolatam.com/certificates/ellyjoawli"}
+                            ]'>
                         </div>
-                        <div class="disponibilidad">
-                            <img src="./assets/icons/checkGreen.svg" alt="disponibilidad icon">
-                            <p>Available</p>
+                        <!-- Contenedor de IBM -->
+                        <div class="certificadora">
+                            <img src="./assets/icons/ibm.svg" alt="IBM Logo" data-items='[
+                                {"name": "Developing Interpersonal Skills", "url": "https://www.coursera.org/account/accomplishments/verify/GB34W2SY37WC"}
+                            ]'>
+                        </div>
+                        <!-- Contenedor de CertiProf -->
+                        <div class="certificadora">
+                            <img src="./assets/icons/certiprof.svg" alt="Certiprof Logo" data-items='[
+                                {"name": "Scrum Foundation Professional Certification - SFPC™ !", "url": "https://www.credly.com/badges/b27d3570-6e8f-4264-84e7-9b28427b9cae/linked_in_profile"}
+                            ]'>
+                        </div>
+                        <!-- Contenedor de Meta -->
+                        <div class="certificadora">
+                            <img src="./assets/icons/meta.svg" alt="Meta Logo" data-items='[
+                                {"name": "Desarrollo móvil y JavaScript", "url": "https://www.coursera.org/account/accomplishments/verify/SRBLFA43YBLA"}
+                            ]'>
+                        </div>
+                        <!-- Contenedor de SENA -->
+                        <div class="certificadora">
+                            <img src="./assets/icons/sena.svg" alt="SENA Logo" data-items='[
+                                {"name": "Creating Applications with App Inventor", "url": "https://drive.google.com/file/d/1uNsHByNu9xYzz0FLJXD6yCz1DOfW3P16/view?usp=sharing"}
+                            ]'>
                         </div>
                     </div>
-                </div>
-                <div class="travel"></div>
-            </div>
-
-            <!-- 📝 Descripción personal -->
-            <div class="myDescription">
-                <img src="./assets/icons/Premio.svg" alt="Premio">
-                <p>Junior Developer with several years of experience as a Freelancer. Multiple certifications. Passionate about traveling and naturally curious. Currently, I am focused on becoming a great leader and continuing to share.</p>
-                <img src="./assets/icons/Premio2.svg" alt="Premio">
-            </div>
-
-            <!-- 📜 Sección de certificaciones -->
-            <div class="certificaciones" id="certificaciones">
-                <h1>Certificaciones</h1>
-                <div class="empresasCertificadoras">
-                    <!-- 🛡️ Contenedores de certificaciones (Cisco, IBM, Meta, etc.) -->
-                    <div class="certificadora">
-                        <img src="./assets/icons/ciscoLogo.svg" alt="Cisco Logo">
-                    </div>
-                    <div class="certificadora">
-                        <img src="./assets/icons/desafioLatamLogo.svg" alt="Desafio Latam Logo">
-                    </div>
-                    <div class="certificadora">
-                        <img src="./assets/icons/ibm.svg" alt="IBM Logo">
-                    </div>
-                    <div class="certificadora">
-                        <img src="./assets/icons/certiprof.svg" alt="Certiprof Logo">
-                    </div>
-                    <div class="certificadora">
-                        <img src="./assets/icons/meta.svg" alt="Meta Logo">
-                    </div>
-                    <div class="certificadora">
-                        <img src="./assets/icons/sena.svg" alt="SENA Logo">
-                    </div>
-                </div>
-
-                <!-- 🔗 Botones de enlaces -->
-                <div class="linkBotones">
-                    <a href="https://www.linkedin.com/in/kevin-stiven-angarita-131243203/">
-                        <p>See on Linked</p>
-                        <img src="./assets/icons/inLogo.svg" alt="LinkedIn Icon">
-                    </a>
-                    <a href="https://github.com/kevincito0987">
-                        <p>See on</p>
-                        <img src="./assets/icons/githubLogo.svg" alt="Github Icon">
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 🛠️ Sección de tecnologías y redes sociales -->
-        <section class="Section2-Work">
-            <div class="work1">
-                <div class="MainCardTech">
-                    <div class="frases1">
-                        <p>MIS FAVORITOS</p>
-                        <p>Tecnologias y herramientas</p>
-                    </div>
-                </div>
-                <div class="MainCardTech2">
-                    <div class="frases2">
-                        <p>LINKS</p>
-                        <p>Social Media</p>
-                    </div>
-                    <div class="socialmedia">
+                    <div class="linkBotones">
                         <a href="https://www.linkedin.com/in/kevin-stiven-angarita-131243203/">
-                            <img src="./assets/icons/linkedinLogo.svg" alt="LinkedIn Icon">
-                        </a>
-                        <a href="https://www.figma.com/@kevinangarita11">
-                            <img src="./assets/icons/blankFigmaLogo.svg" alt="Figma Icon">
-                            <p>Figma</p>
+                            <p>See on Linked</p>
+                            <img src="./assets/icons/inLogo.svg" alt="LinkedIn Icon">
                         </a>
                         <a href="https://github.com/kevincito0987">
+                            <p>See on</p>
                             <img src="./assets/icons/githubLogo.svg" alt="Github Icon">
                         </a>
                     </div>
                 </div>
-            </div>
-                <!-- 🏗️ Sección de trabajos -->
+            </section>
+            <section class="Section2-Work">
+                <div class="work1">
+                    <div class="MainCardTech">
+                        <div class="frases1">
+                            <p>MIS FAVORITOS</p>
+                            <p>Tecnologias y herramientas</p>
+                        </div>
+                    </div>
+                    <div class="MainCardTech2">
+                        <div class="frases2">
+                            <p>LINKS</p>
+                            <p>Social Media</p>
+                        </div>
+                        <div class="socialmedia">
+                            <a href="https://www.linkedin.com/in/kevin-stiven-angarita-131243203/">
+                                <img src="./assets/icons/linkedinLogo.svg" alt="LinkedIn Icon">
+                            </a>
+                            <a href="https://www.figma.com/@kevinangarita11">
+                                <img src="./assets/icons/blankFigmaLogo.svg" alt="Github Icon">
+                                <p>Figma</p>
+                            </a>
+                            <a href="https://github.com/kevincito0987">
+                                <img src="./assets/icons/twiterLogo.svg" alt="Twiter Icon">
+                            </a>
+                            <a href="https://github.com/kevincito0987">
+                                <img src="./assets/icons/githubLogo.svg" alt="Github Icon">
+                            </a>
+                            <a href="https://discordapp.com/users/angaritakevin9138">
+                                <img src="./assets/icons/discord.svg" alt="Discord Icon">
+                            </a>
+                            <a href="https://jidokacommunity.slack.com/team/U04N1J80DMG">
+                                <img src="./assets/icons/slackLogo.svg" alt="Slack Icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="work2">
-                    <!-- 🏆 Primera columna: Acerca de mí -->
                     <div class="part1">
-                        <!-- ✍️ Bloque sobre mí -->
                         <div class="firstPart">
                             <div class="descWork21">
                                 <p>ABOUT ME</p>
                                 <p>My Story</p>
                             </div>
                         </div>
-                        <!-- 📂 Sección de descarga del portafolio -->
                         <div class="secondPart">
                             <div class="descWork22">
                                 <p>FIGMA</p>
@@ -171,8 +177,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- 📱 Segunda columna: Última aplicación -->
                     <div class="part2">
                         <div class="titlePart2">
                             <p>APP</p>
@@ -191,18 +195,14 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- 🏗️ Sección de proyectos -->
                 <div class="work3" id="proyectos">
                     <h2>My Projects</h2>
                     <div class="textProjects">
-                        <img src="./assets/icons/now.svg" alt="Now">
+                        <img src="./assets/icons/now.svg" alt="Ahora">
                         <p>Lista de mis proyectos en CampusLands</p>
-                        <img src="./assets/icons/campusLogo.svg" alt="CampusLands Logo" class="campusLogo">
+                        <img src="./assets/icons/campusLogo.svg" alt="CampusLands" class="campusLogo">
                     </div>
                 </div>
-
-                <!-- 🔎 Filtros de proyectos -->
                 <div class="filters">
                     <a href="#">
                         <img src="./assets/icons/todosProjects.svg" alt="All Projects">
@@ -217,10 +217,7 @@
                         <p>Futuros</p>
                     </a>
                 </div>
-
-                <!-- 🏗️ Contenedor de tarjetas de proyectos -->
                 <div class="card-projects">
-                    <!-- 🍽️ Proyecto de diseño para entrega de comida -->
                     <div class="card1" id="inprogress">
                         <div class="card-image1"></div>
                         <div class="card-content1">
@@ -230,8 +227,6 @@
                             <a href="https://github.com/kevincito0987/projeectSena1" class="card-button" target="_blank">Learn More</a>
                         </div>
                     </div>
-
-                    <!-- 📖 Proyecto sobre exploración de libros -->
                     <div class="card1" id="inprogress">
                         <div class="card-content1">
                             <img src="./assets/icons/Vector.svg" alt="Vector Icon">
@@ -241,105 +236,85 @@
                         </div>
                         <div class="card-image2"></div>
                     </div>
-
-                    <!-- ☕ Proyecto sobre experiencias con bebidas -->
                     <div class="card1" id="future">
                         <div class="card-image3"></div>
                         <div class="card-content1">
                             <img src="./assets/icons/Vector.svg" alt="Vector Icon">
-                            <h3 class="card-title1">Brewing Moments: A UI Journey into Your Favorite Drinks</h3>
+                            <h3 class="card-title1"> Brewing Moments: A UI Journey into Your Favorite Drinks</h3>
                             <p class="card-text">CampusLands</p>
-                            <a href="#" class="card-button" target="_blank">Learn More</a>
+                            <a href="" class="card-button" target="_blank">Learn More</a>
                         </div>
                     </div>
                 </div>
-        </section>
-        <!-- ⚙️ Sección de tecnologías y frameworks -->
-        <section class="Frameworks" id="tecnologias">
-            <div class="technologysDescription">
-                <h1>Frameworks & Tech</h1>
-                <p>These are the tools and frameworks with which I feel most comfortable. However, I am always looking for new ways to improve my skills and stay up to date with the latest technologies. My main stack includes:</p>
-            </div>
-            
-            <!-- 🔧 Tarjetas de tecnologías -->
-            <div class="card-technologies">
-                <!-- 📜 HTML -->
-                <div class="cardT">
-                    <img src="./assets/icons/html.svg" alt="HTML" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">HTML</h3>
-                        <p class="card-text">Language that structures and organizes web content using tags like headers, paragraphs, and images.</p>
+            </section>
+            <section class="Frameworks" id="tecnologias">
+                <div class="technologysDescription">
+                    <h1>Frameworks & Tech</h1>
+                    <p>These are the tools and frameworks with which I feel more comfortable without limiting myself to them because I have worked with a lot of projects with them. I am also a big fan of the latest technologies and I am always looking for new ways to improve my skills.
+                    My main stack is:</p>
+                </div>
+                <div class="card-technologies">
+                    <div class="cardT">
+                        <img src="./assets/icons/html.svg" alt="html" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">HTML</h3>
+                            <p class="card-text">Lenguaje de marcado que estructura y organiza el contenido en páginas web mediante etiquetas como encabezados, párrafos e imágenes.</p>
+                        </div>
+                    </div>
+                    <div class="cardT">
+                        <img src="./assets/icons/css.svg" alt="css" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">CSS</h3>
+                            <p class="card-text">Herramienta de diseño que estiliza elementos HTML, controlando colores, fuentes, posiciones y adaptaciones visuales.</p>
+                        </div>
+                    </div>
+                    <div class="cardT">
+                        <img src="./assets/icons/js.svg" alt="js" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">JS</h3>
+                            <p class="card-text">Lenguaje de programación que agrega interactividad y dinamismo a las páginas, desde animaciones hasta manejo de eventos.</p>
+                        </div>
+                    </div>
+                    <div class="cardT">
+                        <img src="./assets/icons/tailwind.svg" alt="tailwind" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Components</h3>
+                            <p class="card-text">Lenguaje de programación que agrega interactividad y dinamismo a las páginas, desde animaciones hasta manejo de eventos.</p>
+                        </div>
+                    </div>
+                    <div class="cardT">
+                        <img src="./assets/icons/git.svg" alt="git" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Git</h3>
+                            <p class="card-text">Sistema de control de versiones que rastrea cambios en el código, permite colaboración y facilita revertir errores.</p>
+                        </div>
+                    </div>
+                    <div class="cardT">
+                        <img src="./assets/icons/githubLogo.svg" alt="git" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">GitHub</h3>
+                            <p class="card-text">Plataforma basada en Git para alojar repositorios, colaborar en proyectos y gestionar versiones con herramientas sociales.</p>
+                        </div>
                     </div>
                 </div>
-
-                <!-- 🎨 CSS -->
-                <div class="cardT">
-                    <img src="./assets/icons/css.svg" alt="CSS" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">CSS</h3>
-                        <p class="card-text">Styling language that customizes colors, fonts, layouts, and animations on web pages.</p>
-                    </div>
+            </section>
+            <section class="MacBookPro">
+                <div class="comunications">
+                    <img src="./assets/icons/slackLogo.svg" alt="Slack Icon">
+                    <img src="./assets/icons/notionLogo.svg" alt="Notion Icon">
+                    <img src="./assets/icons/psLogo.svg" alt="PS Icon">
+                    <img src="./assets/icons/circleLogo.svg" alt="Circle Icon">
+                    <img src="./assets/icons/vsCodeLogo.svg" alt="VSCode Icon">
+                    <img src="./assets/icons/figmaLogo.svg" alt="Figma Icon">
+                    <img src="./assets/icons/dgLogo.svg" alt="DG Icon">
+                    <img src="./assets/icons/trash.svg" alt="Trash Icon">
                 </div>
-
-                <!-- 🖥️ JavaScript -->
-                <div class="cardT">
-                    <img src="./assets/icons/js.svg" alt="JavaScript" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">JavaScript</h3>
-                        <p class="card-text">Programming language that adds interactivity, animations, and event handling to websites.</p>
-                    </div>
-                </div>
-
-                <!-- 🎭 Tailwind CSS -->
-                <div class="cardT">
-                    <img src="./assets/icons/tailwind.svg" alt="Tailwind CSS" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Tailwind CSS</h3>
-                        <p class="card-text">Utility-first CSS framework for designing modern and responsive UI components efficiently.</p>
-                    </div>
-                </div>
-
-                <!-- 🔄 Git -->
-                <div class="cardT">
-                    <img src="./assets/icons/git.svg" alt="Git" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Git</h3>
-                        <p class="card-text">Version control system that tracks code changes, facilitates collaboration, and enables rollbacks.</p>
-                    </div>
-                </div>
-
-                <!-- 🛠️ GitHub -->
-                <div class="cardT">
-                    <img src="./assets/icons/githubLogo.svg" alt="GitHub" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">GitHub</h3>
-                        <p class="card-text">Platform for hosting repositories, collaborating on projects, and managing version control.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 💻 Sección de herramientas de trabajo -->
-        <section class="MacBookPro">
-            <div class="comunications">
-                <img src="./assets/icons/slackLogo.svg" alt="Slack Icon">
-                <img src="./assets/icons/notionLogo.svg" alt="Notion Icon">
-                <img src="./assets/icons/psLogo.svg" alt="Photoshop Icon">
-                <img src="./assets/icons/circleLogo.svg" alt="Circle Icon">
-                <img src="./assets/icons/vsCodeLogo.svg" alt="VSCode Icon">
-                <img src="./assets/icons/figmaLogo.svg" alt="Figma Icon">
-                <img src="./assets/icons/dgLogo.svg" alt="DG Icon">
-                <img src="./assets/icons/trash.svg" alt="Trash Icon">
-            </div>
-        </section>
-
-        <!-- 🏆 Sección Open Source -->
-        <section class="OpenSource">
-            <h2>Open Source</h2>
-            <p>This portfolio is open source and powered by open-source software. The code is available on GitHub.</p>
-        </section>
-
-        <!-- 🏁 Footer -->
+            </section>
+            <section class="OpenSource">
+                <h2>Open Source</h2>
+                <p>This Portfolio is open source and powered by open source software. The code is available on GitHub.</p>
+            </section>
+        </main>
         <footer>
             <img src="./assets/icons/LogoDP.svg" alt="Logo DP">
             <div class="messege">
