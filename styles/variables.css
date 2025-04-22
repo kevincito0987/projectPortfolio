@@ -1,56 +1,81 @@
+/* 🎨 Paleta de colores global */
 :root {
-  --color-1: #FFFFFF;
-  --color-2: #4B495A;
-  --color-3: #000000;
-  --color-4: #FFFFFF00;
-  --color-5: #FFFFFF05;
-  --color-6: #B7B7B7;
+  /* 🏗️ Colores básicos */
+  --color-1: #FFFFFF; /* Blanco puro */
+  --color-2: #4B495A; /* Gris oscuro */
+  --color-3: #000000; /* Negro */
+
+  /* 🏆 Variaciones de transparencia */
+  --color-4: #FFFFFF00; /* Transparente */
+  --color-5: #FFFFFF05; /* Blanco muy tenue */
+  --color-6: #B7B7B7; /* Gris claro */
+
+  /* 🎭 Tonos oscuros */
   --color-7: #201E38;
-  --color-8: #CECECE;
+  --color-8: #CECECE; /* Gris suave */
   --color-9: #413E6925;
   --color-10: #3C3965;
+
+  /* 🔄 Tonos con opacidad */
   --color-11: #AAA8C950;
   --color-12: #121120;
-  --color-13: #12112000;
-  --color-14: #D80027;
+  --color-13: #12112000; /* Transparente */
+
+  /* 🚀 Colores destacados */
+  --color-14: #D80027; /* Rojo intenso */
   --color-15: #F5F5F580;
-  --color-16: #FFDA44;
+  --color-16: #FFDA44; /* Amarillo vibrante */
   --color-17: #E8E8E805;
+
+  /* 🔗 Variaciones de blanco con opacidad */
   --color-18: #FFFFFF69;
   --color-19: #FFFFFF62;
-  --color-20: #00000069;
+  --color-20: #00000069; /* Negro semi-transparente */
   --color-21: #00000030;
-  --color-22: #0052B4;
+
+  /* 📌 Azul y verdes */
+  --color-22: #0052B4; /* Azul profundo */
   --color-23: #0FE87362;
-  --color-24: #179D59;
+  --color-24: #179D59; /* Verde vibrante */
   --color-25: #179D5944;
   --color-26: #179D5900;
+
+  /* 🏗️ Tonos de fondo */
   --color-27: #1A1F2E26;
   --color-28: #23293C;
   --color-29: #292835;
   --color-30: #2C2A36;
   --color-31: #2C2A50;
   --color-32: #313953;
-  --color-33: #31A8FF;
+
+  /* 🎨 Colores adicionales */
+  --color-33: #31A8FF; /* Azul brillante */
   --color-34: #338AF3;
-  --color-35: #727272;
+  --color-35: #727272; /* Gris oscuro */
   --color-36: #ADABC7;
   --color-37: #D2D2D5;
-  --color-38: #D9D9D9;
+  --color-38: #D9D9D9; /* Gris claro */
   --color-39: #D9D9D923;
+
+  /* 🏆 Tonos suaves */
   --color-40: #DCDAF0;
   --color-41: #DCDAF015;
-  --color-42: #EEEEEE;
+  --color-42: #EEEEEE; /* Gris neutro */
   --color-43: #F1F1F1;
   --color-44: #F5F5F5;
   --color-45: #F5F5F572;
-  --color-46: #FF512F;
+
+  /* 🔥 Tonos cálidos */
+  --color-46: #FF512F; /* Naranja fuerte */
+
+  /* 🌊 Tonos con opacidad */
   --color-47: #FFFFFF30;
   --color-48: #FFFFFF10;
   --color-49: #FFFFFF07;
   --color-50: #FFFFFF04;
 }
 
+/* 🏆 Tipografías */
 @font-face {
   font-family: "Inter-Bold";
   src: url(../assets/fonts/Inter/static/Inter_18pt-Bold.ttf);
@@ -66,6 +91,7 @@
   src: url(../assets/fonts/Inter/static/Inter_28pt-Regular.ttf);
 }
 
+/* 🎨 Tipografías Barlow */
 @font-face {
   font-family: "Barlow-SemiBold";
   src: url(../assets/fonts/Barlow/Barlow-SemiBold.ttf);
@@ -81,6 +107,7 @@
   src: url(../assets/fonts/Barlow/Barlow-Regular.ttf);
 }
 
+/* 🎭 Tipografías Sofia Sans */
 @font-face {
   font-family: "Sofia_Sans-Light";
   src: url(../assets/fonts/Sofia_Sans/static/SofiaSans-Light.ttf);
