@@ -97,37 +97,62 @@ document.addEventListener("DOMContentLoaded", () => {
         }, index * 400); // ⏳ Intervalo entre cada tarjeta generada
     });
 
-    // 🔎 Filtrado de proyectos por estado
+    // 🔎 Función de filtrado e intercambio dinámico
     document.querySelector(".filters").addEventListener("click", (event) => {
         event.preventDefault();
         const filterType = event.target.closest("a")?.querySelector("p")?.textContent;
-    
+
         if (!filterType) return;
 
-        // 🔄 Mostrar todas las tarjetas antes de aplicar filtro
         document.querySelectorAll(".card1").forEach(card => {
-            card.style.display = "flex";
+            card.style.display = "flex"; // Mostrar todas las tarjetas por defecto
         });
 
         if (filterType === "En Progreso") {
+            // Filtro: solo mostrar tarjetas "in progress"
             document.querySelectorAll(".card1:not(#inprogress)").forEach(card => card.style.display = "none");
-            const cardInProgress = document.getElementById("inprogress");
 
-            if (cardInProgress) {
-                const cardImage = cardInProgress.querySelector(".card-image");
-                const cardContent = cardInProgress.querySelector(".card-content1");
+            // Intercala dinámicamente las imágenes y el contenido
+            document.querySelectorAll("#inprogress").forEach((card, index) => {
+                const cardImage = card.querySelector(".card-image");
+                const cardContent = card.querySelector(".card-content1");
 
-                // 🔄 Intercambiar imagen y contenido en la tarjeta "En Progreso"
                 if (cardImage && cardContent) {
-                    cardInProgress.removeChild(cardImage);
-                    cardInProgress.removeChild(cardContent);
-                    cardInProgress.appendChild(cardImage);
-                    cardInProgress.appendChild(cardContent);
+                    card.innerHTML = ""; // Limpia el contenido actual
+
+                    // Alternar posición de imagen y contenido
+                    if (index % 2 === 0) {
+                        card.appendChild(cardImage); // Imagen primero
+                        card.appendChild(cardContent);
+                    } else {
+                        card.appendChild(cardContent); // Contenido primero
+                        card.appendChild(cardImage);
+                    }
                 }
-            }
+            });
 
         } else if (filterType === "Futuros") {
+            // Filtro: solo mostrar tarjetas "future"
             document.querySelectorAll(".card1:not(#future)").forEach(card => card.style.display = "none");
+
+            // Intercala dinámicamente las imágenes y el contenido
+            document.querySelectorAll("#future").forEach((card, index) => {
+                const cardImage = card.querySelector(".card-image");
+                const cardContent = card.querySelector(".card-content1");
+
+                if (cardImage && cardContent) {
+                    card.innerHTML = ""; // Limpia el contenido actual
+
+                    // Alternar posición de imagen y contenido
+                    if (index % 2 === 0) {
+                        card.appendChild(cardImage); // Imagen primero
+                        card.appendChild(cardContent);
+                    } else {
+                        card.appendChild(cardContent); // Contenido primero
+                        card.appendChild(cardImage);
+                    }
+                }
+            });
         }
     });
 });
