@@ -629,6 +629,10 @@ main {
   width: 500px;
 }
 
+.descWork22 a {
+  text-decoration: none;
+}
+
 .descWork22 p:first-child {
   font-family: "Inter-Bold";
   font-size: 24px;
