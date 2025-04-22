@@ -41,6 +41,7 @@ class CertificationList extends HTMLElement {
             const link = document.createElement('a');
             link.classList.add('list-item');
             link.href = item.url || '#';
+            link.target = "_blank"; // 🔗 Abre la URL en una nueva pestaña
             link.textContent = `Certificado ${index + 1}: ${item.name || 'Sin nombre'}`;
             listContainer.appendChild(link); // 🔗 Añade cada elemento a la lista
         });
