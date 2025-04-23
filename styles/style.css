@@ -2801,6 +2801,13 @@ footer p {
     margin: 10px 50px; /* 📏 Sin márgenes innecesarios */
     width: 80%;
   }
+  .card-title3 {
+    font-size:25px; /* 🔤 Fuente ajustada */
+    font-family: "Inter-Bold"; /* 🎨 Tipo de fuente estilizada */
+    text-align: center; /* 🔄 Centra el texto */
+    width: 100%; /* 📐 Ajusta al ancho completo */
+    margin: 0; /* 📏 Sin márgenes extras */
+  }
   .descWork22 p {
     font-size: 1px; /* 🔤 Fuente grande y destacada */
     font-family: "Inter-Bold"; /* 🎨 Tipo de fuente elegante */
