@@ -2536,5 +2536,15 @@ footer p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
     margin-top: 10px; /* 📏 Reduce el espacio superior */
   }
-  
+  footer {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Organiza en columna */
+    align-items: center; /* 🔄 Centra verticalmente */
+    justify-content: center; /* 🔄 Centra horizontalmente */
+    text-align: center; /* 🔄 Centra el texto */
+    gap: 15px; /* 📏 Espaciado entre elementos */
+    padding: 10px; /* 📏 Espaciado interno */
+    width: 100%; /* 📐 Ajusta al ancho completo */
+    margin: 20px 0; /* 📏 Espaciado superior e inferior */
+  }
 }
