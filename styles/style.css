@@ -2548,5 +2548,79 @@ footer p {
     margin: 20px 0 50px; /* 📏 Incrementa espacio inferior con margin-bottom */
     box-sizing: border-box; /* 🛠️ Incluye padding en el cálculo de ancho */
   }
-  
+}
+@media only screen and (min-width: 412px) and (max-width: 440px) {
+  /* 📱 Estilos específicos para pantallas de celulares entre 412px y 440px */
+  /* 🛠️ Estilos para la sección ToolBar */
+  .ToolBar {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Organiza los elementos verticalmente */
+    align-items: center; /* 🔄 Centra los elementos horizontalmente */
+    gap: 20px; /* 📏 Espacio entre los bloques */
+    padding: 15px; /* 📏 Espaciado interno reducido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    height: 30vh;
+    width: 90%;
+  }
+
+  /* 🖋️ Ajuste para el logo */
+  .ToolBar img {
+    width: 60px; /* 📏 Tamaño ajustado del logo */
+    height: auto;
+  }
+
+  /* 🔍 Navegación central */
+  .center-Nav {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila los links verticalmente */
+    gap: 10px; /* 📏 Espaciado entre los links */
+    text-align: center; /* 🔄 Centra el texto */
+    width: 100%; /* 📐 Ocupa todo el ancho */
+  }
+
+  .center-Nav a {
+    font-size: 14px; /* 🔤 Fuente ajustada para pantallas pequeñas */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    transition: color 0.3s ease; /* 🎯 Animación al pasar el cursor */
+  }
+
+  .center-Nav a:hover {
+    color: #007BFF; /* 🎨 Color azul al pasar el cursor */
+  }
+
+  /* 🔗 Botón de LinkedIn */
+  .Button {
+    display: flex; /* 🏗️ Flexbox interno */
+    align-items: center; /* 🔄 Centra ícono y texto verticalmente */
+    justify-content: center; /* 🔄 Centra horizontalmente */
+    gap: 5px; /* 📏 Espacio entre ícono y texto */
+    color: var(--color-6); /* 🎨 Texto blanco */
+    background: var(--color-5);
+    font-size: 18px; /* 🔤 Tamaño ajustado del texto */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    padding: 10px; /* 📏 Espaciado interno */
+    border-radius: 5px; /* 🔵 Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ✨ Sombra ligera */
+    width: 60%; /* 📐 Botón ocupa todo el ancho */
+  }
+  .Button img {
+    width: 20px; /* 📏 Tamaño del logo de LinkedIn */
+    height: auto;
+  }
+  .headerTitle h1{
+    text-align: center; /* 🔄 Centra el texto */
+    gap: 5px; /* 📏 Ajusta espacio entre el título y el logo */
+    font-size: 70px;
+    width: 50%;
+  }
+  .Header h3 {
+    font-size: 20px;
+    width: 40%;
+  }
+  .Header p {
+    font-size: 14px;
+    width: 40%;
+    margin-bottom: 20px;
+  }
 }
