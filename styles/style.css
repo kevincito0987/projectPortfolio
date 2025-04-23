@@ -1681,7 +1681,7 @@ footer p {
   /* 📖 Descripción de la tarjeta */
   .card-content1 .card-text {
     font-size: 14px; /* 🔤 Texto compacto */
-    color: var(--color-10); /* 🎨 Texto gris */
+    color: var(--color-1); /* 🎨 Texto gris */
     text-align: center; /* 🔄 Centra texto */
     margin-bottom: 10px; /* 📏 Separación con el botón */
   }
@@ -1715,7 +1715,7 @@ footer p {
     align-items: center; /* 🔄 Centra el contenido */
     gap: 20px; /* 📏 Espacio entre elementos principales */
     padding: 20px; /* 📏 Espaciado interno */
-    margin-top: 0; /* 🛠️ Asegura que no haya margen superior */
+    margin-top: 130px; /* 🛠️ Asegura que no haya margen superior */
     padding-top: 10px; /* 📏 Espaciado interno ajustado */
     border-radius: 10px; /* 🔵 Bordes suaves */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
@@ -1775,7 +1775,7 @@ footer p {
   .cardT .card-title {
     font-size: 24px; /* 🔤 Fuente compacta */
     font-weight: bold;
-    color: #333; /* 🎨 Texto oscuro */
+    color: var(--color-1); /* 🎨 Texto oscuro */
     text-align: center; /* 🔄 Centra el título */
     margin: 0;
     width: 90%;
@@ -1783,7 +1783,7 @@ footer p {
 
   .cardT .card-text {
     font-size: 12px; /* 🔤 Fuente reducida */
-    color: #555; /* 🎨 Texto gris */
+    color: var(--color-15); /* 🎨 Texto gris */
     text-align: center; /* 🔄 Centra el texto */
     line-height: 1.4; /* 📏 Espaciado de línea compacto */
     margin: 0;
