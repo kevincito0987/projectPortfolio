@@ -2543,8 +2543,10 @@ footer p {
     justify-content: center; /* 🔄 Centra horizontalmente */
     text-align: center; /* 🔄 Centra el texto */
     gap: 15px; /* 📏 Espaciado entre elementos */
-    padding: 10px; /* 📏 Espaciado interno */
+    padding: 20px 10px 50px; /* 📏 Aumenta el espacio inferior con padding-bottom */
     width: 100%; /* 📐 Ajusta al ancho completo */
-    margin: 20px 0; /* 📏 Espaciado superior e inferior */
+    margin: 20px 0 50px; /* 📏 Incrementa espacio inferior con margin-bottom */
+    box-sizing: border-box; /* 🛠️ Incluye padding en el cálculo de ancho */
   }
+  
 }
