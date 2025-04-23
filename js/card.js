@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // 🌆 Cambiar fondo dinámicamente en las últimas dos tarjetas
             if (tarjetasGeneradas.length === 2) {
-                tarjetasGeneradas[0].style.backgroundImage = "url('../assets/images/project4.png')";
-                tarjetasGeneradas[1].style.backgroundImage = "url('../assets/images/project5.png')";
+                tarjetasGeneradas[0].style.backgroundImage = "url('https://github.com/kevincito0987/projectPortfolio/blob/main/assets/images/project4.png?raw=true')";
+                tarjetasGeneradas[1].style.backgroundImage = "url('https://github.com/kevincito0987/projectPortfolio/blob/main/assets/images/project5.png?raw=true')";
             }
 
         }, index * 400); // ⏳ Intervalo entre cada tarjeta generada
