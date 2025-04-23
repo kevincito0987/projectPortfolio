@@ -2743,6 +2743,10 @@ footer p {
     padding: 10px; /* 📏 Espaciado interno */
     border-radius: 8px; /* 🔵 Bordes suaves */
   }
+.frases1 {
+  margin-top: -20px;
+}
+
   .socialmedia {
     display: grid; /* 🏗️ Grid para layout */
     grid-template-columns: repeat(2, 1fr); /* 🌐 Dos columnas de igual ancho */
@@ -2772,5 +2776,218 @@ footer p {
     gap: 5px; /* 📏 Espacio entre el ícono y el texto */
     width: 50%;
   }
+  .work2 {
+    margin-top: -30px;
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila elementos verticalmente */
+    align-items: center; /* 🔄 Centra contenido horizontalmente */
+    gap: 30px; /* 📏 Espaciado entre bloques */
+    padding: 10px; /* 📏 Espaciado interno */ 
+    width: 100%; /* 📐 Ajusta al ancho completo */
+  }
+  .part1 {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila contenido verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    gap: 20px; /* 📏 Espacio entre elementos internos */
+    width: 100%; /* 📐 Ocupa todo el ancho */
+    padding: 20px; /* 📏 Espaciado interno */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .descWork21 p {
+    font-size: 14px; /* 🔤 Fuente grande y destacada */
+    font-family: "Inter-Bold"; /* 🎨 Tipo de fuente elegante */
+    margin: 10px 50px; /* 📏 Sin márgenes innecesarios */
+    width: 80%;
+  }
+  .descWork22 p {
+    font-size: 1px; /* 🔤 Fuente grande y destacada */
+    font-family: "Inter-Bold"; /* 🎨 Tipo de fuente elegante */
+    padding: 0 20px; /* 📏 Ajusta el espacio entre el texto */
+    width: 80%;
+  }
+  .titlePart2 p {
+    font-size: 10px; /* 🔤 Fuente grande y destacada */
+    font-family: "Inter-Bold"; /* 🎨 Tipo de fuente elegante */
+    margin: -20px 20px 0; /* 📏 Sin márgenes innecesarios */
+    width: 100%;
+  }
+  .cardPart1 {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila contenido verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: center; /* 🔄 Centra elementos verticalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    height: 100%; /* 📏 Asegura que ocupa todo el espacio disponible */
+  }
+  .card-button2 {
+    display: flex /* 🏗️ Flexbox interno */;
+    justify-content: center; /* 🔄 Centra horizontalmente */
+    align-items: center; /* 🔄 Centra verticalmente */
+    width: 100%; /* 📐 Ajusta al ancho del contenedor */
+    padding: 10px 15px; /* 📏 Espaciado interno */
+    font-size: 14px; /* 🔤 Tamaño de fuente */
+    text-align: center; /* 🔄 Centra el texto */
+    color: #ffffff; /* 🎨 Texto blanco */
+    margin-right: 80px;
+    margin-top: 20px;
+    text-decoration: none; /* 🚫 Sin subrayado */
+    border-radius: 5px; /* 🔵 Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .work3 {
+    margin-top: 0;
+  }
+  .textProjects {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila elementos verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: flex-start; /* 🔄 Asegura que todo comience desde arriba */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    height: 100%; /* 📏 Asegura que ocupa todo el espacio disponible */
+    gap: 20px; /* 📏 Reduce el espacio entre título y texto */
+    padding: 50px; /* 📏 Espaciado interno adicional */
+  }
+  .textProjects p {
+    font-size: 20px; /* 🔤 Fuente ajustada */
+    font-family: "Inter-Bold"; /* 🎨 Fuente elegante */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    width: 80%; /* 📐 Ajusta ancho relativo */
+    margin: 0; /* 📏 Elimina márgenes superiores e inferiores */
+    padding-top: 10px; /* 📏 Espaciado hacia arriba */
+  }
+  .campusLogoContainer p {
+    margin-right: 50px;
+  }
+  .filters {
+    display: flex; /* 🏗️ Layout flexible */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: center; /* 🔄 Centra elementos verticalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    height: 100%; /* 📏 Asegura que ocupa todo el espacio disponible */
+    gap: 20px; /* 📏 Reduce el espacio entre título y texto */
+    margin-top: 250px;
+    margin-right: 10px;
+    padding: 20px;
+  }
+  .filters a {
+    color: var(--color-40); /* 🎨 Color del texto */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    font-size: 20px; /* 🔤 Tamaño ajustado */
+    display: flex; /* 🏗️ Mantiene distribución en fila */
+    flex-direction: row; /* 🔄 Orientación vertical */
+    align-items: center; /* 🔄 Centrar el contenido verticalmente */
+    justify-content: center; /* 🔄 Centrar el contenido horizontalmente */
+    width: 15vh; /* 📏 Ajustar ancho al contenido */
+    height: auto; /* 📏 Ajustar altura al contenido */
+    gap: 10px; /* 📏 Espaciado entre íconos y texto */
+  }
+  .card-projects {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila elementos verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: center; /* 🔄 Centra elementos verticalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    height: 100%; /* 📏 Asegura que ocupa todo el espacio disponible */
+    gap: 20px; /* 📏 Reduce el espacio entre título y texto */
+  }
+  .card1 {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila elementos verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: center; /* 🔄 Centra elementos verticalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    height: 100%; /* 📏 Asegura que ocupa todo el espacio disponible */
+    gap: 20px; /* 📏 Reduce el espacio entre título y texto */
+    padding: 20px; /* 📏 Espaciado interno */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .card-content1 {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila elementos verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: center; /* 🔄 Centra elementos verticalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    height: 100%; /* 📏 Asegura que ocupa todo el espacio disponible */
+    width: 50%;
+    gap: 20px; /* 📏 Reduce el espacio entre título y texto */
+    padding: 20px; /* 📏 Espaciado interno */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .card-title1 {
+    font-size: 24px; /* 🔤 Fuente grande y destacada */
+    font-family: "Inter-Bold"; /* 🎨 Tipo de fuente elegante */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    width: 80%; /* 📐 Ocupa todo el ancho disponible */
+  }
+  .Frameworks {
+    margin-top: 200px;
+  }
+  .technologysDescription {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila elementos verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: center; /* 🔄 Centra elementos verticalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    height: 100%; /* 📏 Asegura que ocupa todo el espacio disponible */
+    gap: 20px; /* 📏 Reduce el espacio entre título y texto */
+    margin-top: 0;
+    padding: 20px; /* 📏 Espaciado interno */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .technologysDescription h1 {
+    font-size: 38px; /* 🔤 Fuente grande y destacada */
+    font-family: "Inter-Bold"; /* 🎨 Tipo de fuente elegante */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    width: 80%; /* 📐 Ocupa todo el ancho disponible */
+  }
+  .technologysDescription p {
+    font-size: 14px; /* 🔤 Fuente grande y destacada */
+    font-family: "Inter-Bold"; /* 🎨 Tipo de fuente elegante */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    width: 40%; /* 📐 Ocupa todo el ancho disponible */
+    padding: 20px;
+  }
+  .card-technologies {
+    display: grid; /* 🏗️ Usa Grid para layout */
+    grid-template-columns: repeat(1, 1fr); /* 🌐 Dos columnas de igual ancho */
+    gap: 20px; /* 📏 Espaciado uniforme entre tarjetas */
+    width: 100%; /* 📐 Ocupa todo el ancho disponible */
+    max-width: 800px; /* 📏 Ancho máximo para diseño compacto */
+    justify-content: center; /* 🔄 Centra el grid horizontalmente */
+    margin: 0 auto 40px; /* 📏 Espaciado inferior ajustado */
+    padding: 20px; /* 📏 Espaciado interno */
+    box-sizing: border-box; /* 🛠️ Incluye padding en el cálculo del ancho */
+  }
   
+  .MacBookPro {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Asegura contenido organizado verticalmente */
+    margin: 0 auto; /* 🛠️ Centra el contenedor */
+    margin-top: 20px; /* 📏 Espacio reducido encima */
+    width: 100%; /* 📐 Ajusta al ancho completo del contenedor */
+    height: 50vh; /* 📐 Ajusta automáticamente al contenido */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    background-position: center; /* 🖼️ Fondo centrado */
+    background-size: cover; /* 🖼️ Fondo escalado */
+    background-repeat: no-repeat; /* 🖼️ No repetir el fondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+    margin-top: 1900px;
+  }
+  .OpenSource {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila elementos verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: center; /* 🔄 Centra elementos verticalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    gap: 15px; /* 📏 Espaciado entre título y descripción */
+    width: 100%; /* 📐 Ajusta al contenedor */
+    height: auto; /* 📏 Ajusta altura automáticamente según contenido */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+    margin-top: -30px; /* 📏 Espaciado superior e inferior */
+  }
 }
