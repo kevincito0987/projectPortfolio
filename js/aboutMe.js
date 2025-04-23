@@ -31,8 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
         in discussing how we can work together to build innovative solutions, please don't hesitate to get in touch!
     `; // ✍️ Descripción detallada
     description.style.fontSize = "12px"; // 🔤 Fuente pequeña para mantener proporción
+    description.style.margin = "0 auto"; // 🔄 Centra horizontalmente
+    description.style.width = "60%"; // 📐 Ajusta ancho al contenido
     description.style.lineHeight = "1.5"; // 📏 Espaciado entre líneas para legibilidad
-    description.style.textAlign = "justify"; // 📖 Alineación justificada para diseño profesional
+    description.style.textAlign = "center"; // 📖 Alineación justificada para diseño profesional
     description.style.overflow = "hidden"; // ✂️ Oculta contenido desbordado
     description.style.opacity = "0"; // 🕶️ Invisible por defecto
     description.style.height = "0"; // 🔽 Altura inicial 0 para ocultar
