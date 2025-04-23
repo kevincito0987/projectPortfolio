@@ -2956,7 +2956,7 @@ footer p {
     display: grid; /* 🏗️ Usa Grid para layout */
     grid-template-columns: repeat(1, 1fr); /* 🌐 Dos columnas de igual ancho */
     gap: 20px; /* 📏 Espaciado uniforme entre tarjetas */
-    width: 100%; /* 📐 Ocupa todo el ancho disponible */
+    width: 50%; /* 📐 Ocupa todo el ancho disponible */
     max-width: 800px; /* 📏 Ancho máximo para diseño compacto */
     justify-content: center; /* 🔄 Centra el grid horizontalmente */
     margin: 0 auto 40px; /* 📏 Espaciado inferior ajustado */
@@ -2976,7 +2976,7 @@ footer p {
     background-size: cover; /* 🖼️ Fondo escalado */
     background-repeat: no-repeat; /* 🖼️ No repetir el fondo */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
-    margin-top: 1900px;
+    margin-top: 2200px;
   }
   .OpenSource {
     display: flex; /* 🏗️ Layout flexible */
@@ -2989,5 +2989,17 @@ footer p {
     height: auto; /* 📏 Ajusta altura automáticamente según contenido */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
     margin-top: -30px; /* 📏 Espaciado superior e inferior */
+  }
+  footer {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Organiza en columna */
+    align-items: center; /* 🔄 Centra verticalmente */
+    justify-content: center; /* 🔄 Centra horizontalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    gap: 15px; /* 📏 Espaciado entre elementos */
+    padding: 20px 10px 50px; /* 📏 Aumenta el espacio inferior con padding-bottom */
+    width: 100%; /* 📐 Ajusta al ancho completo */
+    margin: 20px 0 50px; /* 📏 Incrementa espacio inferior con margin-bottom */
+    box-sizing: border-box; /* 🛠️ Incluye padding en el cálculo de ancho */
   }
 }
