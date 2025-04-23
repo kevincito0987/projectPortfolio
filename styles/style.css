@@ -1148,3 +1148,561 @@ footer p {
   width: 40px;
   height: 40px;
 }
+
+@media only screen and (max-width: 320px) {
+  /* 🏔️ Header */
+  header {
+    height: auto; /* 🔄 Ajusta dinámicamente la altura */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(67, 67, 67, 0.2)), 
+                      url(../assets/images/header.png); /* 🖼️ Imagen de fondo */
+    background-size: cover; /* 🔄 Escala proporcional del fondo */
+    background-position: center; /* 🖼️ Centrado de la imagen */
+    padding: 5px 5px; /* 📏 Reduce el padding para menos espacio */
+  }
+
+  /* 🔗 ToolBar */
+  .ToolBar {
+    flex-direction: column; /* 🔄 Cambia a diseño vertical */
+    gap: 8px; /* 📏 Reduce espacio entre elementos */
+    width: 100%; /* 📐 Se ajusta al ancho completo */
+    padding: 5px 5px; /* 📏 Espaciado interno reducido */
+    align-items: center; /* 🔄 Centra los elementos */
+    height: 30vh;
+  }
+
+  .ToolBar img {
+    width: 30px; /* 🖼️ Tamaño reducido de íconos */
+    height: 30px;
+  }
+
+  .center-Nav {
+    display: flex;
+    flex-direction: column; /* 🔄 Elementos apilados */
+    gap: 5px; /* 📏 Menor separación */
+    width: auto; /* 📐 Se adapta automáticamente */
+  }
+
+  .center-Nav a {
+    font-size: 10px; /* 🔤 Tamaño más pequeño */
+    padding: 3px 5px; /* 📏 Espaciado interno reducido */
+    text-align: center; /* 🔄 Centra el texto */
+  }
+
+  /* 🎯 Botón interactivo */
+  .Button {
+    width: 120px; /* 📏 Ajusta ancho del botón */
+    height: 30px; /* 📏 Reduce altura del botón */
+    font-size: 10px; /* 🔤 Fuente compacta */
+    padding: 3px; /* 📏 Menor espaciado interno */
+  }
+
+  .Button img {
+    width: 15px; /* 🖼️ Tamaño reducido del ícono */
+    height: 15px;
+  }
+
+ /* 🎨 Títulos en el Header */
+ .headerTitle {
+  text-align: center; /* 🔄 Centrado del texto */
+  gap: 5px; /* 📏 Ajusta espacio entre elementos */
+}
+
+.headerTitle h1 {
+  font-size: 22px; /* 🔤 Texto compacto y legible */
+}
+
+.Header h3, 
+.Header p { 
+  font-size: 10px; /* 🔤 Tamaño de texto reducido para móviles */
+  line-height: 1.4; /* 📏 Espaciado entre líneas optimizado */
+  text-align: center; /* 🔄 Centra el texto horizontalmente */
+  width: 30%; /* 📐 Asegura que ocupe todo el ancho disponible */
+}
+/* 🔳 Contenedor principal */
+.section1 {
+  display: flex; /* 🏗️ Mantiene diseño flexible */
+  flex-direction: column; /* 🔄 Disposición vertical */
+  align-items: center; /* 🔄 Centra los elementos */
+  gap: 15px; /* 📏 Espacio entre elementos */
+  width: 90vh; /* 📐 Ocupa todo el ancho */
+  height: 80vh;
+  padding: 10px; /* 📏 Espaciado interno */
+  border-radius: 10px; /* 🔵 Bordes suaves */
+}
+
+/* 🖼️ Imagen del perfil */
+.imageProfile {
+  display: flex; /* 🏗️ Centra la imagen */
+  align-items: center;
+  justify-content: center;
+  width: 70px; /* 📏 Tamaño más pequeño */
+  height: 70px;
+  border-radius: 50%; /* 🔵 Forma circular */
+  background-color: #ffffff; /* 🎨 Fondo blanco */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+}
+
+.imageProfile img {
+  width: 20px; /* 📏 Ajusta tamaño */
+  height: 20px;
+}
+
+/* 🖋️ Descripción personal */
+.sec1-description {
+  display: flex;
+  flex-direction: column; /* 🔄 Apila contenido */
+  align-items: center; /* 🔄 Centra elementos */
+  gap: 10px; /* 📏 Espacio interno */
+  width: 100%; /* 📐 Ajusta al ancho */
+  padding: 10px;
+}
+
+/* 🏷️ Nombre y bandera */
+.desc1 {
+  display: flex;
+  flex-direction: row; /* 🔄 Elementos en fila */
+  align-items: center; /* 📌 Centrado vertical */
+  gap: 10px; /* 📏 Espaciado entre nombre y bandera */
+}
+
+.desc1 p {
+  font-size: 14px; /* 🔤 Fuente más pequeña para móviles */
+  font-weight: bold;
+  color: #333; /* 🎨 Texto oscuro */
+}
+
+.desc1 img {
+  width: 20px; /* 📏 Tamaño menor */
+  height: 20px;
+}
+
+/* 💻 Información adicional */
+.sec2-description {
+  display: flex;
+  flex-direction: column; /* 🔄 Apila información */
+  gap: 10px; /* 📏 Espacio ajustado */
+  width: 100%;
+}
+
+.rol, 
+.location, 
+.disponibilidad {
+  display: flex;
+  flex-direction: row; /* 🔄 Elementos en fila */
+  align-items: center; /* 📌 Centrado vertical */
+  gap: 8px; /* 📏 Espaciado entre íconos y texto */
+}
+
+.rol p, 
+.location p, 
+.disponibilidad p {
+  font-size: 12px; /* 🔤 Fuente menor */
+  color: #555; /* 🎨 Texto gris oscuro */
+}
+
+.rol img, 
+.location img, 
+.disponibilidad img {
+  width: 15px; /* 📏 Ajusta tamaño de íconos */
+  height: 15px;
+}
+
+ /* 🔽 Travel se coloca al final */
+ .travel {
+  order: 1; /* 🛠️ Fuerza que este bloque se muestre al final */
+  width: 70%; /* 📐 Ajusta al ancho del contenedor */
+  height: 150px; /* 📏 Altura estándar */
+  border-radius: 8px; /* 🔵 Bordes suaves */
+  display: flex; /* 🏗️ Para centrar contenido si es necesario */
+  align-items: center;
+  justify-content: center;
+  margin-top: 210px; /* 📏 Separación con las demás secciones */
+  margin-right: 80px;
+}
+/* 🔳 Contenedor principal de la descripción */
+.myDescription {
+  display: flex; /* 🏗️ Layout flexible */
+  flex-direction: row; /* 🔄 Apila los elementos verticalmente */
+  align-items: center; /* 🔄 Centra todo horizontalmente */
+  justify-content: center; /* 🔄 Centra horizontalmente */
+  gap: 20px; /* 📏 Espacio entre elementos */
+  width: 50vh; /* 📐 Ocupa la mayor parte del ancho disponible */
+  border-radius: 10px; /* 🔵 Bordes suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+}
+
+/* 🏅 Iconos de premio */
+.myDescription img {
+  margin-top: 50px;
+  width: 60px; /* 📏 Ajusta tamaño */
+  height: 60px;
+}
+
+/* 📖 Texto de descripción */
+.myDescription p {
+  font-size: 12px; /* 🔤 Fuente más pequeña para móviles */
+  line-height: 1.5; /* 📏 Mejora la legibilidad */
+  text-align: center; /* 🔄 Centra el texto horizontalmente */
+  color: #333; /* 🎨 Texto oscuro para contraste */
+  margin: 0; /* 🛠️ Elimina márgenes innecesarios */
+}
+/* 🔳 Contenedor principal */
+  .certificaciones {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Organiza en columna */
+    align-items: center; /* 🔄 Centra todo horizontalmente */
+    gap: 20px; /* 📏 Espacio entre elementos */
+    padding: 10px; /* 📏 Ajusta espaciado interno */
+    width: 90%; /* 📐 Ocupa la mayor parte del ancho disponible */
+    margin: 0 auto; /* 🔄 Centra el contenedor */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+
+  /* 🏆 Título */
+  .certificaciones h1 {
+    font-size: 18px; /* 🔤 Texto más pequeño para móviles */
+    text-align: center; /* 🔄 Centrado horizontal */
+    color: #333; /* 🎨 Color oscuro */
+    margin: 0; /* 🛠️ Elimina márgenes innecesarios */
+  }
+
+  .certificadora {
+    display: flex;
+    flex-direction: column; /* 🔄 Apila los íconos y textos */
+    align-items: center; /* 🔄 Centra los elementos */
+    gap: 10px; /* 📏 Espacio entre ícono y enlaces */
+  }
+
+  .certificadora img {
+    width: 50px; /* 📏 Ajusta tamaño de íconos */
+    height: auto;
+  }
+
+  /* 🌐 Enlaces externos */
+  .linkBotones {
+    display: flex;
+    flex-direction: column; /* 🔄 Apila los botones */
+    gap: 10px; /* 📏 Espacio entre enlaces */
+    width: 100%; /* 📐 Ajusta al ancho completo */
+  }
+
+  .linkBotones a img {
+    width: 20px; /* 📏 Tamaño compacto de íconos */
+    height: auto;
+  }
+
+  /* 💻 Empresas certificadoras */
+  .empresasCertificadoras {
+    display: grid; /* 🏗️ Usa grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 🏢 Dos columnas con igual ancho */
+    gap: 10px; /* 📏 Espaciado entre filas y columnas */
+    width: 100%; /* 📐 Ocupa todo el ancho disponible */
+    padding: 10px; /* 📏 Espaciado interno */
+  }
+
+  .certificadora img {
+    width: 60px; /* 📏 Tamaño ajustado del ícono */
+    height: auto; /* 🔄 Mantén proporción */
+  }
+
+  .linkBotones a {
+    display: flex; /* 🏗️ Para centrar íconos y texto */
+    align-items: center; /* 🔄 Alineación vertical */
+    justify-content: center; /* 🔄 Centrados horizontalmente */
+    font-size: 12px; /* 🔤 Fuente ajustada */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    color: #333; /* 🎨 Color oscuro */
+    background-color: var(--color-6); /* 🎨 Fondo claro */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    gap: 4px; /* 📏 Espacio entre ícono y texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .linkBotones a:first-child {
+    width: 90%;
+  }
+
+  .linkBotones a img {
+    width: 20px; /* 📏 Tamaño compacto */
+    height: auto;
+  }
+  /* 🌐 Contenedor principal de Work1 */
+  .work1 {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Organiza elementos en columna */
+    align-items: center; /* 🔄 Centra horizontalmente */
+    gap: 20px; /* 📏 Espacio entre elementos */
+    padding: 10px; /* 📏 Espaciado interno */
+    width: 100%; /* 📐 Ajusta al ancho completo */
+  }
+
+  /* 🎨 Tarjetas de Tecnologías y Redes Sociales */
+  .MainCardTech, .MainCardTech2 {
+    width: 100%; /* 📐 Ocupa todo el ancho del contenedor */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    background-size: cover; /* 🖼️ Escala de imagen */
+    background-position: center; /* 🖼️ Centrado del fondo */
+    padding: 15px; /* 📏 Espaciado interno */
+    display: flex;
+    flex-direction: column; /* 🔄 Contenido apilado */
+    align-items: center; /* 🔄 Centra horizontalmente */
+    gap: 10px; /* 📏 Espacio interno */
+  }
+
+  .frases1, .frases2 {
+    text-align: center; /* 🔄 Centra texto */
+    font-size: 14px; /* 🔤 Tamaño de fuente para móviles */
+    line-height: 1.4; /* 📏 Espaciado entre líneas */
+    background: rgba(0, 0, 0, 0.5); /* 🎨 Fondo semitransparente */
+    color: #fff; /* 🎨 Texto blanco */
+    padding: 10px; /* 📏 Espaciado interno */
+    border-radius: 8px; /* 🔵 Bordes suaves */
+  }
+
+  /* 🌐 Redes sociales */
+  .socialmedia {
+    display: grid; /* 🏗️ Usa grid para organizar íconos */
+    grid-template-columns: 1fr; /* 🏢 Una columna para cada ícono */
+    gap: 10px; /* 📏 Espaciado entre íconos */
+    width: 30%; /* 📐 Ajusta al ancho completo */
+    margin-bottom: 20px;
+  }
+
+  .socialmedia a {
+    display: flex;
+    flex-direction: column; /* 🔄 Ícono y texto en columna */
+    align-items: center; /* 🔄 Centra el contenido */
+    gap: 5px; /* 📏 Espacio entre ícono y texto */
+    text-decoration: none; /* 🚫 Sin subrayado */
+  }
+
+  .socialmedia a img {
+    width: 30px; /* 📏 Tamaño de íconos ajustado */
+    height: auto;
+  }
+  /* 📝 Contenedor principal de work2 */
+  .work2 {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila elementos verticalmente */
+    align-items: center; /* 🔄 Centra contenido horizontalmente */
+    gap: 20px; /* 📏 Espacio entre bloques */
+    padding: 10px; /* 📏 Espaciado interno */
+    width: 100%; /* 📐 Ajusta al ancho completo */
+    margin-top: 20px;
+  }
+
+  /* 🔖 Bloques internos de descripción personal y portafolio */
+  .part1, .part2 {
+    display: flex; /* 🏗️ Mantiene flexibilidad */
+    flex-direction: column; /* 🔄 Apila contenido internamente */
+    align-items: center; /* 🔄 Centra los elementos */
+    gap: 15px; /* 📏 Espacio entre sub-secciones internas */
+    width: 100%; /* 📐 Ocupa todo el ancho disponible */
+    padding: 10px; /* 📏 Espaciado interno */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .part2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  /* 📖 Textos dentro de `firstPart` y `secondPart` */
+  .descWork21, .descWork22, .titlePart2 {
+    text-align: center; /* 🔄 Centra texto */
+    font-size: 14px; /* 🔤 Tamaño ajustado para móviles */
+    line-height: 1.4; /* 📏 Espaciado entre líneas */
+    padding: 10px; /* 📏 Espaciado interno */
+    color: #333; /* 🎨 Texto oscuro */
+  }
+
+  .descWork22 a {
+    font-size: 10px; /* 🔤 Texto compacto */
+    padding: 5px 10px; /* 📏 Ajusta espaciado interno */
+    text-align: center; /* 🔄 Centra enlace */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    color: #fff; /* 🎨 Texto blanco */
+    border-radius: 8px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+    width: 80%;
+    margin-left: 40px;
+  }
+
+  /* 📱 Último producto en el portafolio */
+  .card-linkedin {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila contenido */
+    align-items: center; /* 🔄 Centra los elementos */
+    gap: 10px; /* 📏 Espacio entre elementos */
+    width: 100%; /* 📐 Ajusta al ancho completo */
+    padding: 10px;
+  }
+
+  .card-contentLinkedin {
+    display: flex; /* 🏗️ Contenedor flexible */
+    flex-direction: column; /* 🔄 Alineación vertical */
+    align-items: center; /* 🔄 Centra elementos */
+    gap: 10px; /* 📏 Espaciado interno reducido */
+  }
+
+  .card-title, .card-text {
+    text-align: center; /* 🔄 Centra texto */
+    font-size: 14px; /* 🔤 Fuente ajustada */
+    line-height: 1.4; /* 📏 Espaciado entre líneas */
+  }
+
+  .card-button {
+    font-size: 12px; /* 🔤 Texto compacto */
+    padding: 5px 10px; /* 📏 Espaciado interno reducido */
+    background-color: #008cff; /* 🎨 Fondo distintivo */
+    color: #fff; /* 🎨 Texto blanco */
+    border-radius: 5px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    text-align: center; /* 🔄 Centra texto dentro del botón */
+  }
+  /* 🎯 Contenedor principal de Work3 */
+.work3 {
+  display: flex; /* 🏗️ Layout flexible */
+  flex-direction: column; /* 🔄 Organiza en columna */
+  align-items: center; /* 🔄 Centra contenido horizontalmente */
+  justify-content: flex-start; /* 🔄 Asegura que el contenido empiece desde arriba */
+  width: 100%; /* 📐 Ajusta al ancho completo */
+  height: 60vh; /* 🔄 Altura basada en contenido */
+  padding: 20px; /* 📏 Espaciado interno */
+  border-radius: 10px; /* 🔵 Bordes suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+}
+
+/* ✍️ Título principal */
+.work3 h2 {
+  font-size: 26px; /* 🔤 Fuente ajustada */
+  text-align: center; /* 🔄 Centra el texto */
+  color: var(--color-15); /* 🎨 Texto oscuro */
+}
+
+/* 📖 Bloque de texto y logo */
+.textProjects {
+  display: flex;
+  flex-direction: column; /* 🔄 Apila los sub-elementos */
+  align-items: center; /* 🔄 Centra contenido */
+  gap: 15px; /* 📏 Espacio entre sub-bloques */
+  padding: 15px; /* 📏 Espaciado interno */
+  width: 100%; /* 📐 Ajusta al ancho completo */
+  border-radius: 8px; /* 🔵 Bordes suaves */
+  margin-top: 90px; /* 📏 Reduce el espacio superior */
+}
+.textProjects p {
+  font-size: 14px; /* 🔤 Fuente más pequeña */
+}
+/* 🛠️ Contenedor de Filtros */
+.filters {
+  display: flex; /* 🏗️ Flexbox para organizar */
+  flex-direction: column; /* 🔄 Elementos en una fila */
+  justify-content: space-between; /* 🔄 Espacio uniforme entre los filtros */
+  align-items: center; /* 🔄 Alineación vertical centrada */
+  width: 50%; /* 📐 Ocupa todo el ancho disponible */
+  padding: 10px; /* 📏 Espaciado interno */
+  border-radius: 10px; /* 🔵 Bordes suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+}
+
+/* 🌐 Estilo individual de los filtros */
+.filters a {
+  display: flex; /* 🏗️ Mantén flexibilidad */
+  flex-direction: column; /* 🔄 Ícono y texto en columna */
+  align-items: center; /* 🔄 Centra el contenido */
+  gap: 5px; /* 📏 Espaciado entre ícono y texto */
+  text-decoration: none; /* 🚫 Sin subrayado */
+  color: var(--color-15); /* 🎨 Color oscuro */
+  font-size: 12px; /* 🔤 Tamaño de texto compacto */
+  width: 30%; /* 📐 Ancho uniforme para cada filtro */
+}
+
+/* 🎨 Íconos de Filtros */
+.filters a img {
+  width: 40px; /* 📏 Tamaño del ícono */
+  height: auto; /* 🔄 Mantén proporción */
+}
+
+/* ✍️ Texto debajo de los Íconos */
+.filters a p {
+  font-size: 12px; /* 🔤 Tamaño ajustado */
+  text-align: center; /* 🔄 Centra texto */
+  margin: 0; /* 🛠️ Elimina márgenes extra */
+}
+/* 🎯 Contenedor principal de tarjetas */
+.card-projects {
+  display: flex; /* 🏗️ Layout flexible */
+  flex-direction: column; /* 🔄 Apila las tarjetas verticalmente */
+  gap: 15px; /* 📏 Espacio entre tarjetas */
+  width: 100%; /* 📐 Ocupa el ancho completo */
+}
+/* 🖼️ Tarjetas individuales */
+.card1 {
+  display: flex; /* 🏗️ Flexbox interno */
+  flex-direction: column; /* 🔄 Contenido apilado */
+  align-items: center; /* 🔄 Centra verticalmente */
+  gap: 15px; /* 📏 Espacio entre elementos */
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  padding: 15px; /* 📏 Espaciado interno */
+  width: 100%; /* 📐 Ajusta al ancho del contenedor */
+  }
+
+/* 🖼️ Imágenes de las tarjetas */
+.card1 .card-image1, 
+.card1 .card-image2, 
+.card1 .card-image3 {
+  width: 80%; /* 📐 Ocupa todo el ancho */
+  height: 250px; /* 📏 Altura fija */
+  border-radius: 8px; /* 🔵 Bordes suaves */
+  background-position: center; /* 🖼️ Centrado del fondo */
+  background-size: cover; /* 🖼️ Escala de imagen */
+  background-repeat: no-repeat; /* 🖼️ No repetir la imagen */
+  }
+
+/* 🎨 Icono dentro de la tarjeta */
+.card-content1 img {
+  width: 30px; /* 📏 Tamaño del ícono */
+  height: 30px;
+  }
+
+/* ✍️ Título de la tarjeta */
+.card-content1 .card-title1 {
+  font-size: 10px; /* 🔤 Tamaño ajustado */
+  color: var(--color-1); /* 🎨 Texto claro */
+  text-align: center; /* 🔄 Centra texto */
+}
+
+/* 📖 Descripción de la tarjeta */
+.card-content1 .card-text {
+  font-size: 14px; /* 🔤 Texto compacto */
+  color: var(--color-10); /* 🎨 Texto gris */
+  text-align: center; /* 🔄 Centra texto */
+  margin-bottom: 10px; /* 📏 Separación con el botón */
+}
+
+/* 🔗 Botón de la tarjeta */
+.card-content1 .card-button {
+  display: flex; /* 🏗️ Convierte el botón en un contenedor flexible */
+  justify-content: center; /* 🔄 Centra el contenido horizontalmente */
+  align-items: center; /* 🔄 Centra el contenido verticalmente */
+  font-size: 12px; /* 🔤 Fuente compacta */
+  color: #ffffff; /* 🎨 Texto blanco */
+  text-decoration: none; /* 🚫 Sin subrayado */
+  padding: 8px 10px; /* 📏 Espaciado interno */
+  background-color: #007BFF; /* 🎨 Fondo azul */
+  border-radius: 5px; /* 🔵 Bordes suaves */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ✨ Sombra ligera */
+  text-align: center; /* 🔄 Asegura texto centrado si hay más líneas */
+}
+
+/* Opcional: Contenedor padre del botón */
+.card-content1 {
+  display: flex; /* 🏗️ Flexbox para organizar elementos */
+  flex-direction: column; /* 🔄 Apila los elementos verticalmente */
+  align-items: center; /* 🔄 Centra los elementos horizontalmente */
+  gap: 10px; /* 📏 Espacio entre elementos internos */
+}
+}
