@@ -3036,6 +3036,44 @@ footer p {
     width: 80%;
     margin-bottom: 80px;
   }
+  .work1 {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila contenido verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    gap: 20px; /* 📏 Espaciado entre elementos */
+    width: 100%; /* 📐 Ocupa todo el ancho */
+    height: auto; /* 📏 Permite que el contenedor crezca dinámicamente */
+    min-height: 80vh; /* 📏 Altura mínima definida */
+    padding: 20px; /* 📏 Espaciado interno */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .MainCardTech, .MainCardTech2 {
+    width: 90%; /* 📐 Ocupa todo el ancho del contenedor */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    background-size: cover; /* 🖼️ Escala de imagen */
+    background-position: center; /* 🖼️ Centrado del fondo */
+    padding: 15px; /* 📏 Espaciado interno */
+    display: flex;
+    height: auto; /* 📏 Altura dinámica según contenido */
+    flex-direction: column; /* 🔄 Contenido apilado */
+    align-items: center; /* 🔄 Centra horizontalmente */
+    gap: 10px; /* 📏 Espacio interno */
+  }
+  .MainCardTech {
+    min-height: 50vh; /* 📏 Define una altura mínima */
+    width: 87%; /* 📐 Ocupa todo el ancho */
+  }
+  .frases1 {
+    width: 105%;
+    margin: -20px ; /* 🛠️ Centra el contenedor */
+  }
+  .socialmedia a {
+    display: flex; /* 🏗️ Flexbox interno */
+    justify-content: center; /* 🔄 Centra horizontalmente */
+    align-items: center; /* 🔄 Centra verticalmente */
+    width: 28vh; /* 📐 Ocupa todo el ancho */
+  }
 }
 @media only screen and (min-width: 820px) {
   .Header img {
