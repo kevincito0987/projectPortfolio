@@ -3074,6 +3074,163 @@ footer p {
     align-items: center; /* 🔄 Centra verticalmente */
     width: 28vh; /* 📐 Ocupa todo el ancho */
   }
+  .work2 {
+    display: flex; /* 🏗️ Flexbox para mejor alineación */
+    flex-direction: column; /* 🔄 Organización vertical */
+    align-items: center; /* 🔄 Centra los elementos */
+    justify-content: center; /* 🔄 Centra contenido */
+    width: 100%; /* 📐 Ocupa todo el ancho */
+    max-width: 900px; /* 📏 Ancho máximo controlado */
+    gap: 30px; /* 📏 Espacio entre elementos */
+  }
+
+  .part1,
+  .part2 {
+    width: 100%; /* 📏 Ajusta el ancho para que sean más grandes */
+    max-width: 700px; /* 📏 Limita el ancho máximo */
+    padding: 20px; /* 📏 Espaciado interno para mejor diseño */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .part1 {
+    display: flex; /* 🏗️ Flexbox para organizar */
+    flex-direction: column; /* 🔄 Orientación vertical */
+    gap: 20px; /* 📏 Espacio entre elementos */
+    align-items: center; /* 🔄 Centra horizontalmente */
+  }
+  .firstPart {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Organiza verticalmente */
+    align-items: center; /* 🔄 Centra los elementos */
+    justify-content: center; /* 🔄 Contenido centrado */
+    width: 100%; /* 📐 Ocupa todo el ancho */
+    max-width: 800px; /* 📏 Limita el ancho */
+    padding: 20px; /* 📏 Espaciado interno */
+  }
+
+  .descWork21 {
+    text-align: center; /* 🔄 Centra el texto */
+    font-size: 1.4rem; /* 🔤 Tamaño ajustado */
+    margin-bottom: 20px; /* 📏 Espaciado para que haya aire visual */
+  }
+
+  .description {
+    width: 80%; /* 📐 Ajusta el ancho */
+    font-size: 1rem; /* 🔤 Tamaño reducido */
+    text-align: center; /* 🔄 Centra el texto */
+    line-height: 1.5; /* 📏 Espaciado entre líneas */
+    opacity: 0; /* 🕶️ Inicialmente invisible */
+    height: 0; /* 🔽 Oculto */
+    transition: opacity 0.3s ease, height 0.3s ease; /* ✨ Animación suave */
+  }
+  .secondPart {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Orientación vertical */
+    align-items: center; /* 🔄 Centra horizontalmente */
+    gap: 20px; /* 📏 Espacio entre elementos */
+    width: 100%; /* 📐 Ocupa todo el ancho */
+    height: 60vh;
+    max-width: 800px; /* 📏 Ancho máximo controlado */
+    padding: 20px; /* 📏 Espaciado interno */
+  }
+  .descWork22 {
+    text-align: center; /* 🔄 Centra el texto */
+    font-size: 1.4rem; /* 🔤 Tamaño ajustado */
+    margin-bottom: 20px; /* 📏 Espaciado para que haya aire visual */
+  }
+
+  .titlePart2 {
+    text-align: center; /* 🔄 Centra los títulos */
+    font-size: 1.6rem; /* 🔤 Tamaño de fuente ajustado */
+  }
+
+  .card-linkedin {
+    display: flex; /* 🏗️ Layout flexible */
+    justify-content: center; /* 🔄 Centra la tarjeta */
+    width: 100%; /* 📐 Ajusta al ancho del contenedor */
+  }
+
+  .card {
+    width: 80%; /* 📏 Tarjeta más ancha */
+    max-width: 600px; /* 📏 Controla su tamaño máximo */
+    padding: 20px; /* 📏 Espaciado interno */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .part2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .titlePart2 {
+    font-size: 1.6rem; /* 🔤 Tamaño de fuente ajustado */
+    gap: 30px;
+  }
+  .titlePart2 p:first-child {
+    font-size: 40px; /* 🔤 Fuente grande y destacada */
+    font-family: "Inter-Bold"; /* 🎨 Tipo de fuente elegante */
+    width: 40%;
+    margin: 0 0 0 -40px;
+  }
+  .titlePart2 p:last-child {
+    font-size: 40px; /* 🔤 Fuente grande y destacada */
+    font-family: "Inter-Bold"; /* 🎨 Tipo de fuente elegante */
+    width: 80%;
+  }
+  .card-linkedin {
+    display: flex; /* 🏗️ Flexbox para estructura */
+    justify-content: center; /* 🔄 Centra horizontalmente */
+    align-items: center; /* 🔄 Centra verticalmente */
+    width: 100%; /* 📐 Ocupa todo el ancho disponible */
+    padding: 10px; /* 📏 Espaciado interno */
+    box-sizing: border-box; /* 🛠️ Incluye padding en el ancho */
+    margin-left: -20px;
+    bottom: -10px;
+  }
+  .card-projects {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila elementos verticalmente */
+    margin: 20px;
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: center; /* 🔄 Centra elementos verticalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    height: 100%; /* 📏 Asegura que ocupa todo el espacio disponible */
+    gap: 20px; /* 📏 Reduce el espacio entre título y texto */
+  }
+  .card1 {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: row; /* 🔄 Apila elementos verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: center; /* 🔄 Centra elementos verticalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */  
+    padding: 20px;
+    width: 80%;
+  }
+  .card-content1 {
+    display: flex; /* 🏗️ Layout flexible */
+    flex-direction: column; /* 🔄 Apila elementos verticalmente */
+    align-items: center; /* 🔄 Centra elementos horizontalmente */
+    justify-content: center; /* 🔄 Centra elementos verticalmente */
+    text-align: center; /* 🔄 Centra el texto horizontalmente */
+    height: 100%; /* 📏 Asegura que ocupa todo el espacio disponible */
+    width: 50%;
+    gap: 20px; /* 📏 Reduce el espacio entre título y texto */
+    padding: 20px; /* 📏 Espaciado interno */
+    border-radius: 10px; /* 🔵 Bordes suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera */
+  }
+  .Frameworks {
+    margin-top: 120px;
+  }
+  .technologysDescription p {
+    width: 80%;
+  }
+  .card-technologies {
+    width: 80%;
+  }
+  .OpenSource p {
+    width: 80%;
+  }
 }
 @media only screen and (min-width: 820px) {
   .Header img {
@@ -3124,5 +3281,3 @@ footer p {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12); /* ✨ Sombra sutil */
   }
 }
-
-
