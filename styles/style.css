@@ -3010,3 +3010,81 @@ footer p {
     box-sizing: border-box; /* 🛠️ Incluye padding en el cálculo de ancho */
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1114px) {
+  /* 📱 Estilos específicos para pantallas entre 768px y 1114px */
+  .Header img {
+    width: 96%; /* 📐 Ajusta el ancho al 96% del contenedor */
+    height: auto; /* 🔄 Mantén proporciones */
+    left: 50%; /* 📏 Centra horizontalmente */
+    top: 23%; /* 📏 Centra verticalmente */
+    transform: translate(-50%, -50%); /* 🛠️ Ajusta para centrar completamente */
+    overflow: hidden; /* 🚫 Asegura que nada se desborde */
+  }
+  
+  .headerTitle h1{
+    text-align: center; /* 🔄 Centra el texto */
+    gap: 5px; /* 📏 Ajusta espacio entre el título y el logo */
+    font-size: 90px;
+    width: 70%;
+  }
+  .Header h3 {
+    font-size: 30px;
+    width: 80%;
+  }
+  .Header p {
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 820px) {
+  .Header img {
+    width: 80%; /* 📐 Reduce el ancho para evitar desbordamientos */
+    height: auto; /* 🔄 Mantén proporciones */
+    position: absolute; /* 🛠️ Ajusta posición absoluta para control */
+    left: 50%; /* 📏 Centra horizontalmente */
+    top: 20%; /* 📏 Centra verticalmente */
+    transform: translate(-55%, -50%); /* 🛠️ Ajusta para centrado perfecto */
+    overflow: hidden; /* 🚫 Asegura que nada se desborde */
+    border-radius: 15px; /* 🔵 Bordes más estilizados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* ✨ Sombra ligera para destacar */
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 819px) {
+  .Header img {
+    width: 90%; /* 📐 Ajusta el ancho para evitar desbordamiento */
+    height: auto; /* 🔄 Mantén proporciones */
+    left: 50%; /* 📏 Centra horizontalmente */
+    top: 18.5%; /* 📏 Centra verticalmente */
+    transform: translate(-55%, -50%); /* 🛠️ Centrado absoluto */
+    border-radius: 15px; /* 🔵 Bordes más suaves */
+    overflow: hidden; /* 🚫 Asegura que nada se desborde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ✨ Sombra ligera para estética */
+  }
+}
+@media only screen and (min-width: 1114px) {
+  .Header img {
+    width: 75%; /* 📐 Reduce el ancho para ajustarlo al diseño */
+    height: auto; /* 🔄 Mantén proporciones */
+    position: absolute; /* 🛠️ Ajusta la posición de la imagen */
+    left: 50%; /* 📏 Centra horizontalmente */
+    top: 38%; /* 📏 Centra verticalmente */
+    transform: translate(-55%, -50%); /* 🛠️ Centrado absoluto */
+    border-radius: 20px; /* 🔵 Bordes más estilizados */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* ✨ Sombra más definida */
+  }
+}
+@media only screen and (min-width: 884px) and (max-width: 899px) {
+  .Header img {
+    width: 85%; /* 📐 Ajusta el ancho para evitar desbordamiento */
+    height: auto; /* 🔄 Mantén proporciones */
+    position: absolute; /* 🛠️ Controla la posición dentro del contenedor */
+    left: 50%; /* 📏 Centra horizontalmente */
+    top: 24.5%; /* 📏 Centra verticalmente */
+    transform: translate(-55%, -50%); /* 🛠️ Centrado completo */
+    border-radius: 18px; /* 🔵 Bordes con estilo */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12); /* ✨ Sombra sutil */
+  }
+}
+
+
