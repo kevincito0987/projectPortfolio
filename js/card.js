@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".card-projects");
+    // ❌ Se ha eliminado la línea container.innerHTML = ""; para no borrar las tarjetas existentes.
 
-    // 📌 Lista de proyectos a generar dinámicamente
+    // 📌 Lista de proyectos a generar dinámicamente (solo los dos nuevos)
     const proyectos = [
         {
             titulo: "Exploring the Future of AI in Everyday Life",
@@ -9,15 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
             imagenClass: "card-image1",
             enlace: "https://github.com/kevincito0987/eCommerceClothingStore",
             invertirOrden: true, // 📌 Indica si la imagen debe ir después del contenido
-            id: "inprogress"
+            id: "inprogress",
+            imagenUrl: "https://github.com/kevincito0987/projectPortfolio/blob/main/assets/images/project4.png?raw=true"
         },
         {
             titulo: "Immersive UI Journey Through Gaming Interfaces",
             texto: "Personal",
-            imagenClass: "card-image2",
+            imagenClass: "card-image1",
             enlace: "https://github.com/kevincito0987/projectConcets",
             invertirOrden: false,
-            id: "future"
+            id: "future",
+            imagenUrl: "https://github.com/kevincito0987/projectPortfolio/blob/main/assets/images/project5.png?raw=true"
         }
     ];
 
@@ -27,35 +30,51 @@ document.addEventListener("DOMContentLoaded", () => {
     proyectos.forEach((proyecto, index) => {
         setTimeout(() => {
             const card = document.createElement("div");
-            card.classList.add("card1");
+            card.classList.add("card1", "rounded-lg", "p-4", "flex", "flex-col", "items-center", "w-full", "md:w-5/12", "space-y-4", "md:space-y-0", "md:space-x-4");
 
             // 🏷️ Asignar ID si existe
             if (proyecto.id) {
                 card.id = proyecto.id;
             }
+            
+            // Añadir flex-row-reverse si es necesario para el orden
+            if (proyecto.invertirOrden) {
+                card.classList.add("md:flex-row-reverse");
+            } else {
+                card.classList.add("md:flex-row");
+            }
 
             // 🖼️ Creación de imagen de tarjeta
             const cardImage = document.createElement("div");
-            cardImage.classList.add("card-image", proyecto.imagenClass);
+            // Se usa la clase de imagen de la lista de proyectos y también se añade "card-image"
+            cardImage.classList.add(proyecto.imagenClass, "card-image", "w-full", "md:w-1/2", "h-64", "md:h-auto", "bg-gray-700", "rounded-lg");
+            cardImage.style.backgroundSize = "cover";
+
+            if (proyecto.imagenUrl) {
+                cardImage.style.backgroundImage = `url('${proyecto.imagenUrl}')`;
+            }
+
 
             // 📝 Creación de contenido de tarjeta
             const cardContent = document.createElement("div");
-            cardContent.classList.add("card-content1");
+            cardContent.classList.add("card-content1", "w-full", "md:w-1/2", "flex", "flex-col", "justify-center", "text-white", "p-4");
 
             const icon = document.createElement("img");
             icon.src = "./assets/icons/Vector.svg";
             icon.alt = "Vector Icon";
+            icon.classList.add("w-8", "h-8", "mb-2");
+
 
             const title = document.createElement("h3");
-            title.classList.add("card-title1");
+            title.classList.add("card-title1", "text-lg", "font-semibold", "mb-1");
             title.textContent = proyecto.titulo;
 
             const text = document.createElement("p");
-            text.classList.add("card-text");
+            text.classList.add("card-text", "text-sm", "text-gray-400", "mb-4");
             text.textContent = proyecto.texto;
 
             const button = document.createElement("a");
-            button.classList.add("card-button");
+            button.classList.add("card-button", "text-blue-500", "hover:underline");
             button.href = proyecto.enlace;
             button.textContent = "Learn More";
             button.target = "_blank"; // 🔗 Abre en nueva pestaña
@@ -87,12 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 100);
 
             tarjetasGeneradas.push(cardImage);
-
-            // 🌆 Cambiar fondo dinámicamente en las últimas dos tarjetas
-            if (tarjetasGeneradas.length === 2) {
-                tarjetasGeneradas[0].style.backgroundImage = "url('https://github.com/kevincito0987/projectPortfolio/blob/main/assets/images/project4.png?raw=true')";
-                tarjetasGeneradas[1].style.backgroundImage = "url('https://github.com/kevincito0987/projectPortfolio/blob/main/assets/images/project5.png?raw=true')";
-            }
 
         }, index * 400); // ⏳ Intervalo entre cada tarjeta generada
     });

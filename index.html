@@ -19,43 +19,47 @@
         <script type="module" src="./js/scroll.js" defer></script> <!-- 🕶️ Función de desplazamiento suave -->
         <script type="module" src="./js/card.js" defer></script> <!-- 🎨 Creación dinámica de tarjetas -->
         <script type="module" src="./js/aboutMe.js"></script> <!-- 📝 Funcionalidad de About Me -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>    
     <body>
         <header>
             <!-- 🛠️ Barra de herramientas: Navegación y logo -->
-            <section class="ToolBar">
-                <img src="./assets/icons/myLogo.svg" alt="Image preview profile"> <!-- 🔗 Logo del portafolio -->
+            <section class="Toolbar flex justify-between items-center w-full px-4 py-3 md:px-8 bg-gray-900 shadow-md rounded-2xl md:rounded-full max-w-7xl mx-auto my-4">
                 
-                <!-- 🔍 Navegación central -->
-                <div class="center-Nav">
-                    <a href="#certificaciones">Certificaciones</a> <!-- 🏆 Sección de certificaciones -->
-                    <a href="#proyectos">Proyectos</a> <!-- 📂 Sección de proyectos -->
-                    <a href="#tecnologias">Tecnologías</a> <!-- ⚙️ Sección de tecnologías -->
+                <!-- 🔗 Logo del portafolio, ajustado para que sea una de las esquinas -->
+                <div class="flex-shrink-0">
+                    <img src="./assets/icons/myLogo.svg" alt="Image preview profile" class="h-10 w-10 rounded-full border-2 border-orange-500">
                 </div>
-        
+                
+                <!-- 🔍 Navegación central, oculta en móvil y visible en pantallas medianas -->
+                <div class="hidden md:flex justify-center items-center gap-6 text-white">
+                    <a href="#certificaciones" class="hover:text-orange-500 transition-colors duration-200">Certificaciones</a>
+                    <a href="#proyectos" class="hover:text-orange-500 transition-colors duration-200">Proyectos</a>
+                    <a href="#tecnologias" class="hover:text-orange-500 transition-colors duration-200">Tecnologías</a>
+                </div>
+
                 <!-- 🔗 Botón de LinkedIn -->
-                <a href="https://www.linkedin.com/in/kevin-stiven-angarita-131243203/" class="Button" target="_blank">
-                    <span>Linked</span> <!-- 🌐 Texto del botón -->
-                    <img src="./assets/icons/inLogo.svg" alt="Image preview profile"> <!-- 🖋️ Logo de LinkedIn -->
+                <a href="https://www.linkedin.com/in/kevin-stiven-angarita-caama%C3%B1o-131243203/" class="Button ml-auto md:ml-0" target="_blank" rel="noopener noreferrer">
+                    <span class="hidden sm:inline">Linked</span> 
+                    <img src="./assets/icons/inLogo.svg" alt="Image preview profile">
                 </a>
             </section>
         
             <!-- 🎨 Sección de encabezado principal -->
-            <section class="Header">
-                <img src="./assets/images/Group3.png" alt="Image preview profile"> <!-- 🖼️ Imagen del encabezado -->
+            <section class="Header flex flex-col justify-center items-center text-center p-4 sm:p-8 md:p-12">
                 
                 <!-- ✍️ Título del encabezado -->
-                <div class="headerTitle">
-                    <h1>CREATIVE DEVELOPER SINCE</h1> <!-- 🏗️ Declaración creativa -->
-                    <h1>2021</h1> <!-- 📅 Año de inicio -->
+                <div class="headerTitle flex flex-col items-center">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">CREATIVE DEVELOPER SINCE</h1> <!-- 🏗️ Declaración creativa -->
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mt-2">2021</h1> <!-- 📅 Año de inicio -->
                 </div>
-        
+
                 <!-- 📖 Descripción del desarrollador -->
-                <h3>
+                <h3 class="text-lg sm:text-xl md:text-2xl mt-6 max-w-2xl mx-auto">
                     Over the last year, I have been working on a variety of projects, 
                     from designing and developing websites to creating mobile apps..
                 </h3>
-                <p>
+                <p class="text-sm sm:text-base md:text-lg mt-4 max-w-xl mx-auto">
                     Developing user-centric interfaces that captivate and engage audiences 
                     and make a real impact.
                 </p>
@@ -64,208 +68,223 @@
         <main>
             <section class="Section1">
                 <!-- 🖼️ Contenedor principal con imagen de perfil -->
-                <div class="section1">
-                    <div class="imageProfile">
-                        <img src="./assets/icons/myLogo.svg" alt="Image preview profile"> <!-- 🔗 Imagen del perfil -->
+                <div class="section1 flex flex-col sm:flex-row items-center justify-center p-4 sm:p-6 md:p-8 rounded-2xl md:rounded-full bg-gray-900 shadow-xl w-full mx-auto my-4 gap-4 sm:gap-6">
+                    
+                    <div class="imageProfile flex-shrink-0">
+                        <img src="./assets/images/profile.jpg" alt="Image preview profile" class="h-24 w-24 rounded-full border-4 border-white">
                     </div>
-            
+
                     <!-- 🎯 Descripción personal -->
-                    <div class="sec1-description">
+                    <div class="sec1-description flex flex-col text-center sm:text-left">
                         <!-- 🔖 Nombre y bandera -->
-                        <div class="desc1">
-                            <p>Kevin S. Angarita</p> <!-- ✍️ Nombre completo -->
+                        <div class="desc1 flex items-center justify-center sm:justify-start gap-2">
+                            <p class="text-xl font-semibold text-white">Kevin S. Angarita</p>
                             <div>
-                                <img src="./assets/icons/colombia.svg" alt="Colombia Icon"> <!-- 🌎 Bandera de Colombia -->
+                                <img src="./assets/icons/colombia.svg" alt="Colombia Icon" class="h-4 w-auto">
                             </div>
                         </div>
-            
+
                         <!-- 💻 Información adicional: rol, ubicación, disponibilidad -->
-                        <div class="sec2-description">
-                            <div class="rol">
-                                <img src="./assets/icons/laptop.svg" alt="computer icon"> <!-- 💻 Icono de rol -->
-                                <p>Junior Software Developer</p> <!-- 🎯 Rol profesional -->
+                        <div class="sec2-description flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-2 sm:gap-4 mt-2">
+                            <div class="rol flex items-center gap-1">
+                                <img src="./assets/icons/laptop.svg" alt="computer icon" class="h-4 w-auto">
+                                <p class="text-sm text-gray-400">Junior Software Developer</p>
                             </div>
-                            <div class="location">
-                                <img src="./assets/icons/map-pin.svg" alt="location icon"> <!-- 📍 Icono de ubicación -->
-                                <p>Colombia</p> <!-- 🌍 Ubicación actual -->
+                            <div class="location flex items-center gap-1">
+                                <img src="./assets/icons/map-pin.svg" alt="location icon" class="h-4 w-auto">
+                                <p class="text-sm text-gray-400">Colombia</p>
                             </div>
-                            <div class="disponibilidad">
-                                <img src="./assets/icons/checkGreen.svg" alt="disponibilidad icon"> <!-- ✔️ Disponibilidad -->
-                                <p>Available</p> <!-- 🚦 Estado -->
+                            <div class="disponibilidad flex items-center gap-1">
+                                <img src="./assets/icons/checkGreen.svg" alt="disponibilidad icon" class="h-4 w-auto">
+                                <p class="text-sm text-gray-400">Available</p>
                             </div>
                         </div>
                     </div>
-            
                     <!-- ✈️ Placeholder de viajes -->
-                    <div class="travel"></div> <!-- 🌍 Espacio para elementos relacionados con viajes -->
+                    <div class="travel flex-none w-32 h-24 sm:w-48 sm:h-32 md:w-64 md:h-40 ml-auto">
+                    </div>
                 </div>
-            
+                
                 <!-- 📝 Descripción adicional personal -->
-                <div class="myDescription">
-                    <img src="./assets/icons/Premio.svg" alt="Premio"> <!-- 🏅 Icono de premio -->
-                    <p>
-                        Junior Developer with several years of experience as a Freelancer. Multiple certifications. Passionate about traveling 
-                        and naturally curious. Currently, I am focused on becoming a great leader and continuing to share.
-                    </p> <!-- 📖 Descripción personal -->
-                    <img src="./assets/icons/Premio2.svg" alt="Premio"> <!-- 🏆 Segundo icono de premio -->
+                <div class="myDescription flex flex-col items-center justify-center text-center p-4 sm:p-6 md:p-8">
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <!-- 🏅 Icono de premio -->
+                        <img src="./assets/icons/Premio.svg" alt="Premio" class="w-12 h-auto sm:w-16">
+
+                        <!-- 📖 Descripción personal -->
+                        <p class="max-w-xl mx-auto text-sm sm:text-base md:text-lg text-white">
+                            Junior Developer with several years of experience as a Freelancer. Multiple certifications. Passionate about traveling 
+                            and naturally curious. Currently, I am focused on becoming a great leader and continuing to share.
+                        </p>
+                        
+                        <!-- 🏆 Segundo icono de premio -->
+                        <img src="./assets/icons/Premio2.svg" alt="Premio" class="w-12 h-auto sm:w-16">
+                    </div>
                 </div>
             
                 <!-- 📜 Sección de certificaciones -->
-                <div class="certificaciones" id="certificaciones">
-                    <h1>Certificaciones</h1> <!-- 🏆 Título de certificaciones -->
-            
+                <div class="certificaciones flex flex-col items-center justify-center p-4 sm:p-6 md:p-8" id="certificaciones">
+                    <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-white uppercase tracking-wide">Certificaciones</h1> <!-- 🏆 Título de certificaciones -->
+
                     <!-- 💻 Empresas certificadoras -->
-                    <div class="empresasCertificadoras">
+                    <div class="empresasCertificadoras grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-row md:flex-wrap items-center justify-center gap-6 sm:gap-8 mt-8">
                         <!-- Cisco -->
-                        <div class="certificadora">
+                        <div class="certificadora p-2">
                             <img src="./assets/icons/ciscoLogo.svg" alt="Cisco Logo" data-items='[
                                 {"name": "Cyber Threat Management", "url": "https://www.credly.com/badges/65f37156-48f3-4f05-9e7a-b5f72bcc2896/public_urllinked_in_profile"},
                                 {"name": "Endpoint Security", "url": "https://www.credly.com/badges/02d7642a-7a23-4525-9de4-335df981d3e1/linked_in_profile"},
                                 {"name": "Network Defense", "url": "https://www.credly.com/badges/288954f1-0017-45c5-aabd-42c6aba500bf/linked_in_profile"},
                                 {"name": "Introduction to Cybersecurity", "url": "https://www.credly.com/badges/02a4edf7-5823-4fd9-b9f1-dc69f0f21129/linked_in_profile"}
-                            ]'> <!-- 🔗 Certificaciones de Cisco -->
+                            ]' class="h-10 w-auto md:h-12"> <!-- 🔗 Certificaciones de Cisco -->
                         </div>
-            
+
                         <!-- Desafío Latam -->
-                        <div class="certificadora">
+                        <div class="certificadora p-2">
                             <img src="./assets/icons/desafioLatamLogo.svg" alt="Desafio Latam Logo" data-items='[
                                 {"name": " Introducción al Desarrollo Web", "url": "https://cursos.desafiolatam.com/certificates/hhkcrp0wyd"},
                                 {"name": "Bases de Git y Github", "url": "https://cursos.desafiolatam.com/certificates/ellyjoawli"}
-                            ]'> <!-- 🔗 Certificaciones de Desafío Latam -->
+                            ]' class="h-10 w-auto md:h-12"> <!-- 🔗 Certificaciones de Desafío Latam -->
                         </div>
-            
+                        
                         <!-- IBM -->
-                        <div class="certificadora">
+                        <div class="certificadora p-2">
                             <img src="./assets/icons/ibm.svg" alt="IBM Logo" data-items='[
                                 {"name": "Developing Interpersonal Skills", "url": "https://www.coursera.org/account/accomplishments/verify/GB34W2SY37WC"}
-                            ]'> <!-- 🔗 Certificaciones de IBM -->
+                            ]' class="h-10 w-auto md:h-12"> <!-- 🔗 Certificaciones de IBM -->
                         </div>
-            
+                        
                         <!-- CertiProf -->
-                        <div class="certificadora">
+                        <div class="certificadora p-2">
                             <img src="./assets/icons/certiprof.svg" alt="Certiprof Logo" data-items='[
                                 {"name": "Scrum Foundation Professional Certification - SFPC™ !", "url": "https://www.credly.com/badges/b27d3570-6e8f-4264-84e7-9b28427b9cae/linked_in_profile"}
-                            ]'> <!-- 🔗 Certificaciones de CertiProf -->
+                            ]' class="h-10 w-auto md:h-12"> <!-- 🔗 Certificaciones de CertiProf -->
                         </div>
-            
+                        
                         <!-- Meta -->
-                        <div class="certificadora">
+                        <div class="certificadora p-2">
                             <img src="./assets/icons/meta.svg" alt="Meta Logo" data-items='[
                                 {"name": "Desarrollo móvil y JavaScript", "url": "https://www.coursera.org/account/accomplishments/verify/SRBLFA43YBLA"}
-                            ]'> <!-- 🔗 Certificaciones de Meta -->
+                            ]' class="h-10 w-auto md:h-12"> <!-- 🔗 Certificaciones de Meta -->
                         </div>
-            
+                        
                         <!-- SENA -->
-                        <div class="certificadora">
+                        <div class="certificadora p-2">
                             <img src="./assets/icons/sena.svg" alt="SENA Logo" data-items='[
                                 {"name": "Creating Applications with App Inventor", "url": "https://drive.google.com/file/d/1uNsHByNu9xYzz0FLJXD6yCz1DOfW3P16/view?usp=sharing"}
-                            ]'> <!-- 🔗 Certificaciones del SENA -->
+                            ]' class="h-10 w-auto md:h-12"> <!-- 🔗 Certificaciones del SENA -->
                         </div>
                     </div>
-            
+                    
                     <!-- 🌐 Enlaces externos -->
-                    <div class="linkBotones">
-                        <a href="https://www.linkedin.com/in/kevin-stiven-angarita-131243203/" target="_blank">
+                    <div class="linkBotones flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+                        <a href="https://www.linkedin.com/in/kevin-stiven-angarita-caama%C3%B1o-131243203/" class="Button bg-gray-700 text-white hover:bg-gray-600 transition-colors duration-200 py-2 px-6 rounded-full" target="_blank" rel="noopener noreferrer">
                             <p>See on Linked</p> <!-- 🔗 Ver en LinkedIn -->
-                            <img src="./assets/icons/inLogo.svg" alt="LinkedIn Icon">
+                            <img src="./assets/icons/inLogo.svg" alt="LinkedIn Icon" class="h-5 w-auto ml-2">
                         </a>
-                        <a href="https://github.com/kevincito0987" target="_blank">
+                        <a href="https://github.com/kevincito0987" target="_blank" rel="noopener noreferrer" class="Button bg-gray-700 text-white hover:bg-gray-600 transition-colors duration-200 py-2 px-6 rounded-full">
                             <p>See on</p> <!-- 🔗 Ver en GitHub -->
-                            <img src="./assets/icons/githubLogo.svg" alt="Github Icon">
+                            <img src="./assets/icons/githubLogo.svg" alt="Github Icon" class="h-5 w-auto ml-2">
                         </a>
                     </div>
                 </div>
             </section>            
             <section class="Section2-Work">
                 <!-- 🎨 Work1: Tecnologías y herramientas favoritas y links de redes sociales -->
-                <div class="work1">
-                    <div class="MainCardTech">
+                <div class="work1 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 p-4 sm:p-6 md:p-8">
+                    <div class="MainCardTech bg-gray-800 rounded-lg p-6 flex flex-col justify-start">
                         <!-- 🛠️ Bloque de tecnologías favoritas -->
-                        <div class="frases1">
-                            <p>MIS FAVORITOS</p> <!-- ✍️ Título -->
-                            <p>Tecnologias y herramientas</p> <!-- 🔧 Subtítulo -->
+                        <div class="frases1 text-center">
+                            <p class="text-sm text-gray-400">MIS FAVORITOS</p> <!-- ✍️ Título -->
+                            <p class="text-xl font-semibold text-white">Tecnologias y herramientas</p> <!-- 🔧 Subtítulo -->
                         </div>
                     </div>
-                    <div class="MainCardTech2">
+                    <div class="MainCardTech2 rounded-lg p-6 flex flex-col items-start">
                         <!-- 🌐 Bloque de redes sociales -->
-                        <div class="frases2">
+                        <div class="frases2 text-center w-full">
                             <p>LINKS</p> <!-- 🌍 Título -->
                             <p>Social Media</p> <!-- 🔗 Subtítulo -->
                         </div>
-                        <div class="socialmedia">
+                        <div class="socialmedia flex flex-wrap justify-center items-center gap-4 mt-4 w-full">
                             <!-- 🔗 LinkedIn -->
-                            <a href="https://www.linkedin.com/in/kevin-stiven-angarita-131243203/" target="_blank">
-                                <img src="./assets/icons/linkedinLogo.svg" alt="LinkedIn Icon"> <!-- 🖋️ Icono de LinkedIn -->
+                            <a href="https://www.linkedin.com/in/kevin-stiven-angarita-caama%C3%B1o-131243203/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/icons/linkedinLogo.svg" alt="LinkedIn Icon" class="h-8 w-40"> <!-- 🖋️ Icono de LinkedIn -->
                             </a>
                             <!-- 🔗 Figma -->
-                            <a href="https://www.figma.com/@kevinangarita11" target="_blank">
-                                <img src="./assets/icons/blankFigmaLogo.svg" alt="Figma Icon"> <!-- 🎨 Icono de Figma -->
-                                <p>Figma</p> <!-- ✍️ Texto adicional -->
+                            <a href="https://www.figma.com/@kevinangarita11" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1">
+                                <img src="./assets/icons/blankFigmaLogo.svg" alt="Figma Icon" class="h-8 w-20"> <!-- 🎨 Icono de Figma -->
+                                <p class="text-white text-sm">Figma</p> <!-- ✍️ Texto adicional -->
                             </a>
                             <!-- 🔗 Twitter -->
-                            <a href="https://github.com/kevincito0987" target="_blank">
-                                <img src="./assets/icons/twiterLogo.svg" alt="Twitter Icon"> <!-- 🐦 Icono de Twitter -->
+                            <a href="https://github.com/kevincito0987" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/icons/twiterLogo.svg" alt="Twitter Icon" class="h-8 w-20"> <!-- 🐦 Icono de Twitter -->
                             </a>
                             <!-- 🔗 GitHub -->
-                            <a href="https://github.com/kevincito0987" target="_blank">
-                                <img src="./assets/icons/githubLogo.svg" alt="GitHub Icon"> <!-- 🖋️ Icono de GitHub -->
+                            <a href="https://github.com/kevincito0987" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/icons/githubLogo.svg" alt="GitHub Icon" class="h-8 w-20"> <!-- 🖋️ Icono de GitHub -->
                             </a>
                             <!-- 🔗 Discord -->
-                            <a href="https://discordapp.com/users/angaritakevin9138" target="_blank">
-                                <img src="./assets/icons/discord.svg" alt="Discord Icon"> <!-- 🎮 Icono de Discord -->
+                            <a href="https://discordapp.com/users/angaritakevin9138" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/icons/discord.svg" alt="Discord Icon" class="h-9 w-20"> <!-- 🎮 Icono de Discord -->
                             </a>
                             <!-- 🔗 Slack -->
-                            <a href="https://jidokacommunity.slack.com/team/U04N1J80DMG" target="_blank">
-                                <img src="./assets/icons/slackLogo.svg" alt="Slack Icon"> <!-- 💬 Icono de Slack -->
+                            <a href="https://jidokacommunity.slack.com/team/U04N1J80DMG" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/icons/slackLogo.svg" alt="Slack Icon" class="h-9 w-20"> <!-- 💬 Icono de Slack -->
                             </a>
                         </div>
                     </div>
                 </div>
-            
+
                 <!-- 📝 Work2: Descripción personal y elementos destacados -->
-                <div class="work2">
-                    <div class="part1">
+                <div class="work2 grid gap-4 grid-cols-1 md:grid-cols-2 p-4 sm:p-6 md:p-8">
+                    <div class="part1 rounded-lg p-6 flex flex-col items-center justify-center">
                         <!-- 🔖 Bloque de descripción personal -->
-                        <div class="firstPart">
+                        <div class="firstPart text-center">
                             <div class="descWork21">
-                                <p>ABOUT ME</p> <!-- ✍️ Título -->
-                                <p>My Story</p> <!-- 📖 Subtítulo -->
+                                <p class="text-sm text-gray-400">ABOUT ME</p> <!-- ✍️ Título -->
+                                <p class="text-xl font-semibold text-white">My Story</p> <!-- 📖 Subtítulo -->
                             </div>
                         </div>
                         <!-- 🎨 Figma y portafolio -->
-                        <div class="secondPart">
+                        <div class="secondPart text-center mt-4">
                             <div class="descWork22">
-                                <p>FIGMA</p> <!-- ✍️ Título -->
-                                <a href="https://www.figma.com/design/VudHmFzZssjyP1UWVp5PoV/Portfolio---NextJS-14---Blog-%7C-Richard-Vinueza-GitHub--Community-?node-id=179-149" target="_blank">
-                                    <p>Download it.</p> <!-- 🔗 Enlace para descargar portafolio -->
+                                <p class="text-sm text-gray-400">FIGMA</p> <!-- ✍️ Título -->
+                                <a href="https://www.figma.com/design/VudHmFzZssjyP1UWVp5PoV/Portfolio---NextJS-14---Blog-%7C-Richard-Vinueza-GitHub--Community-?node-id=179-149" target="_blank" rel="noopener noreferrer">
+                                    <p class="text-xl font-semibold text-white">Download it.</p> <!-- 🔗 Enlace para descargar portafolio -->
                                 </a>
                             </div>
                         </div>
                     </div>
-            
+
                     <!-- 📱 Último producto en el portafolio -->
-                    <div class="part2">
-                        <div class="titlePart2">
-                            <p>APP</p> <!-- ✍️ Título -->
-                            <p>LAST PRODUCT IN PORTFOLIO</p> <!-- 📦 Subtítulo -->
+                    <div class="part2 rounded-lg p-6 flex flex-col items-center justify-center relative overflow-hidden">
+
+                        <!-- Contenedor superior con el texto "APP" y "LAST PRODUCT IN PORTFOLIO" -->
+                        <div class="absolute top-0 left-0 right-0">
+                            <div class="titlePart2 text-left">
+                                <p class="text-sm text-gray-400">APP</p> <!-- ✍️ Título -->
+                                <p class="text-xl font-semibold text-white">LAST PRODUCT IN PORTFOLIO</p> <!-- 📦 Subtítulo -->
+                            </div>
                         </div>
-                        <div class="card-linkedin">
-                            <div class="card">
-                                <div class="card-contentLinkedin">
-                                    <div class="cardPart1">
-                                        <h3 class="card-title3">Coffe Shop App</h3> <!-- ✍️ Nombre del producto -->
-                                        <p class="card-text">PRODUCT</p> <!-- 📦 Tipo de contenido -->
-                                    </div>
-                                    <a href="https://github.com/kevincito0987/casoBarman.git" class="card-button2">Visitar</a> <!-- 🔗 Botón de visita -->
+
+                        <!-- Contenedor inferior con el título del producto y el botón -->
+                        <div class="fond2 absolute bottom-0 left-0 right-0 z-10">
+                            <div class="card-contentLinkedin flex justify-between items-center text-white">
+                                <div class="cardPart1">
+                                    <h3 class="card-title3 text-lg font-semibold">Memory Clickst...</h3> <!-- ✍️ Nombre del producto -->
+                                    <p class="card-text text-sm text-gray-400">PRODUCT</p> <!-- 📦 Tipo de contenido -->
                                 </div>
+                                <a href="https://github.com/kevincito0987/casoBarman.git" class="card-button2 text-white py-2 px-4 transition-colors duration-200">Visitar</a> <!-- 🔗 Botón de visita -->
                             </div>
                         </div>
                     </div>
                 </div>
-            
+      
                 <!-- 🎯 Work3: Proyectos -->
-                <div class="work3" id="proyectos">
-                    <h2>My Projects</h2> <!-- ✍️ Título -->
+                <div class="work3 my-8 md:my-16 px-4 md:px-8" id="proyectos">
+                    <div class="text-center mb-8">
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mb-2">Projects and Products</h2> <!-- ✍️ Título -->
+                        <p class="text-lg text-gray-400">Lista de productos</p> <!-- 📖 Descripción breve -->
+                    </div>
                     <div class="textProjects">
                         <div class="developer">
                             <img src="./assets/icons/now.svg" alt="Ahora"> <!-- 🔗 Icono -->
@@ -278,179 +297,185 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <!-- 🛠️ Filtros de proyectos -->
-                <div class="filters">
-                    <a href="#">
+                <div class="filters flex justify-center items-center space-x-4 mb-8">
+                    <a href="#" class="flex items-center space-x-2 text-white bg-gray-700 hover:bg-gray-600 transition-colors p-2 rounded-full">
                         <img src="./assets/icons/todosProjects.svg" alt="All Projects"> <!-- 🌐 Icono -->
                         <p>Todos</p> <!-- ✍️ Texto -->
                     </a>
-                    <a href="#">
+                    <a href="#" class="flex items-center space-x-2 text-white bg-gray-700 hover:bg-gray-600 transition-colors p-2 rounded-full">
                         <img src="./assets/icons/inProgressProjects.svg" alt="Projects in progress"> <!-- 🔄 Icono -->
                         <p>En Progreso</p> <!-- ✍️ Texto -->
                     </a>
-                    <a href="#">
+                    <a href="#" class="flex items-center space-x-2 text-white bg-gray-700 hover:bg-gray-600 transition-colors p-2 rounded-full">
                         <img src="./assets/icons/futureProjects.svg" alt="Future Projects"> <!-- 🔮 Icono -->
                         <p>Futuros</p> <!-- ✍️ Texto -->
                     </a>
                 </div>
-            
                 <!-- 🖼️ Contenedor dinámico de tarjetas -->
-                <div class="card-projects">
-                    <div class="card1" id="inprogress">
-                        <div class="card-image1"></div> <!-- 🖼️ Imagen de tarjeta -->
-                        <div class="card-content1">
-                            <img src="./assets/icons/Vector.svg" alt="Vector Icon"> <!-- 🎨 Icono -->
-                            <h3 class="card-title1">Delicious Design Journey Through the Art of Food Delivery</h3> <!-- ✍️ Título -->
-                            <p class="card-text">Sena</p> <!-- ✍️ Descripción -->
-                            <a href="https://github.com/kevincito0987/projeectSena1" class="card-button" target="_blank">Learn More</a> <!-- 🔗 Botón -->
+                <div class="card-projects flex flex-col md:flex-row flex-wrap items-center justify-center gap-8">
+                    <!-- Tarjeta 1: Imagen a la izquierda, contenido a la derecha -->
+                    <div class="card1 rounded-lg p-4 flex flex-col md:flex-row items-center w-full md:w-5/12 space-y-4 md:space-y-0 md:space-x-4" id="inprogress">
+                        <div class="card-image1 w-full md:w-1/2 h-64 md:h-auto bg-gray-700 rounded-lg"></div>
+                        <div class="card-content1 w-full md:w-1/2 flex flex-col justify-center text-white p-4">
+                            <img src="./assets/icons/Vector.svg" alt="Vector Icon" class="w-8 h-8 mb-2">
+                            <h3 class="card-title1 text-lg font-semibold mb-1">A Visual Journey Through Stories from the World</h3>
+                            <p class="card-text text-sm text-gray-400 mb-4">Huma Legends</p>
+                            <a href="#" class="card-button text-blue-500 hover:underline">Learn More</a>
                         </div>
                     </div>
-                    <div class="card1" id="inprogress">
-                        <div class="card-content1">
-                            <img src="./assets/icons/Vector.svg" alt="Vector Icon"> <!-- 🎨 Icono -->
-                            <h3 class="card-title1">A Visual Journey Through the Worlds Inside Books</h3> <!-- ✍️ Título -->
-                            <p class="card-text">CampusLands</p> <!-- ✍️ Descripción -->
-                            <a href="https://github.com/kevincito0987/exploradorDeLibrosConWebComponets" class="card-button" target="_blank">Learn More</a> <!-- 🔗 Botón -->
+                    
+                    <!-- Tarjeta 2: Contenido a la izquierda, imagen a la derecha -->
+                    <div class="card1 rounded-lg p-4 flex flex-col md:flex-row-reverse items-center w-full md:w-5/12 space-y-4 md:space-y-0 md:space-x-4" id="inprogress">
+                        <div class="card-content1 w-full md:w-1/2 flex flex-col justify-center text-white p-4">
+                            <img src="./assets/icons/Vector.svg" alt="Vector Icon" class="w-8 h-8 mb-2">
+                            <h3 class="card-title1 text-lg font-semibold mb-1">App Web de Aprendizaje para todas las edades...</h3>
+                            <p class="card-text text-sm text-gray-400 mb-4">Memory (MCS)</p>
+                            <a href="#" class="card-button text-blue-500 hover:underline">Learn More</a>
                         </div>
-                        <div class="card-image2"></div> <!-- 🖼️ Imagen de tarjeta -->
+                        <div class="card-image2 w-full md:w-1/2 h-64 md:h-auto bg-gray-700 rounded-lg"></div>
                     </div>
-                    <div class="card1" id="future">
-                        <div class="card-image3"></div> <!-- 🖼️ Imagen de tarjeta -->
-                        <div class="card-content1">
-                            <img src="./assets/icons/Vector.svg" alt="Vector Icon"> <!-- 🎨 Icono -->
-                            <h3 class="card-title1">Brewing Moments: A UI Journey into Your Favorite Drinks</h3> <!-- ✍️ Título -->
-                            <p class="card-text">CampusLands</p> <!-- ✍️ Descripción -->
-                            <a href="https://github.com/kevincito0987/casoBarman.git" class="card-button" target="_blank">Learn More</a> <!-- 🔗 Botón -->
+
+                    <!-- Tarjeta 3: Imagen a la izquierda, contenido a la derecha -->
+                    <div class="card1 rounded-lg p-4 flex flex-col md:flex-row items-center w-full md:w-5/12 space-y-4 md:space-y-0 md:space-x-4" id="future">
+                        <div class="card-image3 w-full md:w-1/2 h-64 md:h-auto bg-gray-700 rounded-lg"></div>
+                        <div class="card-content1 w-full md:w-1/2 flex flex-col justify-center text-white p-4">
+                            <img src="./assets/icons/Vector.svg" alt="Vector Icon" class="w-8 h-8 mb-2">
+                            <h3 class="card-title1 text-lg font-semibold mb-1">Ultimos lanzamientos Hola Ultimos lanzamientos</h3>
+                            <p class="card-text text-sm text-gray-400 mb-4">UBRAND</p>
+                            <a href="#" class="card-button text-blue-500 hover:underline">Learn More</a>
                         </div>
                     </div>
                 </div>
+
             </section>            
-            <section class="Frameworks" id="tecnologias">
+            <section class="Frameworks p-4 sm:p-8 md:p-12 text-center" id="tecnologias">
                 <!-- 🛠️ Descripción general de tecnologías -->
-                <div class="technologysDescription">
-                    <h1>Frameworks & Tech</h1> <!-- 📋 Título principal -->
-                    <p>
+                <div class="technologysDescription max-w-4xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Frameworks & Tech</h1> <!-- 📋 Título principal -->
+                    <p class="text-gray-400 text-lg sm:text-xl md:text-2xl mt-4">
                         These are the tools and frameworks with which I feel more comfortable without limiting myself to them because I have worked 
                         with a lot of projects with them. I am also a big fan of the latest technologies and I am always looking for new ways 
                         to improve my skills. My main stack is:
                     </p> <!-- ✍️ Descripción general -->
                 </div>
-            
+
                 <!-- 🎨 Tarjetas de tecnologías y frameworks -->
-                <div class="card-technologies">
+                <div class="card-technologies mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- 🔖 Tarjeta de HTML -->
-                    <div class="cardT">
-                        <img src="./assets/icons/html.svg" alt="HTML" class="card-image"> <!-- 🖼️ Icono de HTML -->
+                    <div class="cardT bg-gray-800 rounded-lg p-6 shadow-lg transition transform hover:scale-105 duration-300">
+                        <img src="./assets/icons/html.svg" alt="HTML" class="card-image w-16 h-16 mx-auto mb-4"> <!-- 🖼️ Icono de HTML -->
                         <div class="card-content">
-                            <h3 class="card-title">HTML</h3> <!-- ✍️ Título -->
-                            <p class="card-text">
+                            <h3 class="card-title text-xl font-semibold text-white mb-2">HTML</h3> <!-- ✍️ Título -->
+                            <p class="card-text text-gray-400">
                                 Lenguaje de marcado que estructura y organiza el contenido en páginas web mediante etiquetas como encabezados, párrafos e imágenes.
                             </p> <!-- 📖 Descripción -->
                         </div>
                     </div>
-            
+
                     <!-- 🔖 Tarjeta de CSS -->
-                    <div class="cardT">
-                        <img src="./assets/icons/css.svg" alt="CSS" class="card-image"> <!-- 🎨 Icono de CSS -->
+                    <div class="cardT bg-gray-800 rounded-lg p-6 shadow-lg transition transform hover:scale-105 duration-300">
+                        <img src="./assets/icons/css.svg" alt="CSS" class="card-image w-16 h-16 mx-auto mb-4"> <!-- 🎨 Icono de CSS -->
                         <div class="card-content">
-                            <h3 class="card-title">CSS</h3> <!-- ✍️ Título -->
-                            <p class="card-text">
+                            <h3 class="card-title text-xl font-semibold text-white mb-2">CSS</h3> <!-- ✍️ Título -->
+                            <p class="card-text text-gray-400">
                                 Herramienta de diseño que estiliza elementos HTML, controlando colores, fuentes, posiciones y adaptaciones visuales.
                             </p> <!-- 📖 Descripción -->
                         </div>
                     </div>
-            
+
                     <!-- 🔖 Tarjeta de JavaScript -->
-                    <div class="cardT">
-                        <img src="./assets/icons/js.svg" alt="JS" class="card-image"> <!-- 🖋️ Icono de JavaScript -->
+                    <div class="cardT bg-gray-800 rounded-lg p-6 shadow-lg transition transform hover:scale-105 duration-300">
+                        <img src="./assets/icons/js.svg" alt="JS" class="card-image w-16 h-16 mx-auto mb-4"> <!-- 🖋️ Icono de JavaScript -->
                         <div class="card-content">
-                            <h3 class="card-title">JS</h3> <!-- ✍️ Título -->
-                            <p class="card-text">
+                            <h3 class="card-title text-xl font-semibold text-white mb-2">JS</h3> <!-- ✍️ Título -->
+                            <p class="card-text text-gray-400">
                                 Lenguaje de programación que agrega interactividad y dinamismo a las páginas, desde animaciones hasta manejo de eventos.
                             </p> <!-- 📖 Descripción -->
                         </div>
                     </div>
-            
+
                     <!-- 🔖 Tarjeta de Tailwind (Componentes) -->
-                    <div class="cardT">
-                        <img src="./assets/icons/tailwind.svg" alt="Tailwind" class="card-image"> <!-- 🎨 Icono de Tailwind -->
+                    <div class="cardT bg-gray-800 rounded-lg p-6 shadow-lg transition transform hover:scale-105 duration-300">
+                        <img src="./assets/icons/tailwind.svg" alt="Tailwind" class="card-image w-16 h-16 mx-auto mb-4"> <!-- 🎨 Icono de Tailwind -->
                         <div class="card-content">
-                            <h3 class="card-title">Components</h3> <!-- ✍️ Título -->
-                            <p class="card-text">
+                            <h3 class="card-title text-xl font-semibold text-white mb-2">Components</h3> <!-- ✍️ Título -->
+                            <p class="card-text text-gray-400">
                                 Lenguaje de programación que agrega interactividad y dinamismo a las páginas, desde animaciones hasta manejo de eventos.
                             </p> <!-- 📖 Descripción -->
                         </div>
                     </div>
-            
+
                     <!-- 🔖 Tarjeta de Git -->
-                    <div class="cardT">
-                        <img src="./assets/icons/git.svg" alt="Git" class="card-image"> <!-- 🔄 Icono de Git -->
+                    <div class="cardT bg-gray-800 rounded-lg p-6 shadow-lg transition transform hover:scale-105 duration-300">
+                        <img src="./assets/icons/git.svg" alt="Git" class="card-image w-16 h-16 mx-auto mb-4"> <!-- 🔄 Icono de Git -->
                         <div class="card-content">
-                            <h3 class="card-title">Git</h3> <!-- ✍️ Título -->
-                            <p class="card-text">
+                            <h3 class="card-title text-xl font-semibold text-white mb-2">Git</h3> <!-- ✍️ Título -->
+                            <p class="card-text text-gray-400">
                                 Sistema de control de versiones que rastrea cambios en el código, permite colaboración y facilita revertir errores.
                             </p> <!-- 📖 Descripción -->
                         </div>
                     </div>
-            
+
                     <!-- 🔖 Tarjeta de GitHub -->
-                    <div class="cardT">
-                        <img src="./assets/icons/githubLogo.svg" alt="GitHub" class="card-image"> <!-- 🌐 Icono de GitHub -->
+                    <div class="cardT bg-gray-800 rounded-lg p-6 shadow-lg transition transform hover:scale-105 duration-300">
+                        <img src="./assets/icons/githubLogo.svg" alt="GitHub" class="card-image w-16 h-16 mx-auto mb-4"> <!-- 🌐 Icono de GitHub -->
                         <div class="card-content">
-                            <h3 class="card-title">GitHub</h3> <!-- ✍️ Título -->
-                            <p class="card-text">
+                            <h3 class="card-title text-xl font-semibold text-white mb-2">GitHub</h3> <!-- ✍️ Título -->
+                            <p class="card-text text-gray-400">
                                 Plataforma basada en Git para alojar repositorios, colaborar en proyectos y gestionar versiones con herramientas sociales.
                             </p> <!-- 📖 Descripción -->
                         </div>
                     </div>
                 </div>
-            </section>            
-            <section class="MacBookPro">
+            </section>
+            <section class="MacBookPro flex flex-col items-center justify-center p-4 sm:p-8 md:p-12">
                 <!-- 💻 Herramientas de comunicación y desarrollo -->
-                <div class="comunications">
+                <div class="comunications bg-gray-900 px-4 py-2 flex flex-wrap justify-center items-center gap-4 shadow-lg transition transform hover:-translate-y-1 duration-300">
                     <!-- 🌐 Slack -->
-                    <img src="./assets/icons/slackLogo.svg" alt="Slack Icon"> <!-- 💬 Comunicación en equipo -->
+                    <img src="./assets/icons/slackLogo.svg" alt="Slack Icon" class="w-8 h-8 md:w-10 md:h-10"> <!-- 💬 Comunicación en equipo -->
                     <!-- 📝 Notion -->
-                    <img src="./assets/icons/notionLogo.svg" alt="Notion Icon"> <!-- 📚 Organización y productividad -->
+                    <img src="./assets/icons/notionLogo.svg" alt="Notion Icon" class="w-8 h-8 md:w-10 md:h-10"> <!-- 📚 Organización y productividad -->
                     <!-- 🎨 Adobe Photoshop -->
-                    <img src="./assets/icons/psLogo.svg" alt="PS Icon"> <!-- 🖌️ Edición visual -->
+                    <img src="./assets/icons/psLogo.svg" alt="PS Icon" class="w-8 h-8 md:w-10 md:h-10"> <!-- 🖌️ Edición visual -->
                     <!-- 🔵 Circle -->
-                    <img src="./assets/icons/circleLogo.svg" alt="Circle Icon"> <!-- 🌐 Gestión de proyectos -->
+                    <img src="./assets/icons/circleLogo.svg" alt="Circle Icon" class="w-8 h-8 md:w-10 md:h-10"> <!-- 🌐 Gestión de proyectos -->
                     <!-- 🖥️ Visual Studio Code -->
-                    <img src="./assets/icons/vsCodeLogo.svg" alt="VSCode Icon"> <!-- 🔧 Editor de código -->
+                    <img src="./assets/icons/vsCodeLogo.svg" alt="VSCode Icon" class="w-8 h-8 md:w-10 md:h-10"> <!-- 🔧 Editor de código -->
                     <!-- 🎨 Figma -->
-                    <img src="./assets/icons/figmaLogo.svg" alt="Figma Icon"> <!-- 🖍️ Diseño de interfaces -->
+                    <img src="./assets/icons/figmaLogo.svg" alt="Figma Icon" class="w-8 h-8 md:w-10 md:h-10"> <!-- 🖍️ Diseño de interfaces -->
                     <!-- 🚀 DataGrip -->
-                    <img src="./assets/icons/dgLogo.svg" alt="DG Icon"> <!-- 🛠️ Gestión de bases de datos -->
+                    <img src="./assets/icons/dgLogo.svg" alt="DG Icon" class="w-8 h-8 md:w-10 md:h-10"> <!-- 🛠️ Gestión de bases de datos -->
                     <!-- 🗑️ Papelera -->
-                    <img src="./assets/icons/trash.svg" alt="Trash Icon"> <!-- ✂️ Elementos eliminados -->
+                    <img src="./assets/icons/trash.svg" alt="Trash Icon" class="w-8 h-8 md:w-10 md:h-10"> <!-- ✂️ Elementos eliminados -->
                 </div>
             </section>
             
-            <section class="OpenSource">
-                <!-- 🌟 Información sobre el código abierto -->
-                <h2>Open Source</h2> <!-- 🏆 Título -->
-                <p>
+            <!-- 🌟 Información sobre el código abierto -->
+            <section class="OpenSource flex flex-col items-center justify-center p-4 sm:p-8 md:p-12 text-center rounded-xl max-w-2xl mx-auto mt-8">
+                <h2 class="text-4xl font-bold text-white mb-4">Open Source</h2> <!-- � Título -->
+                <p class="text-gray-400 text-lg">
                     This Portfolio is open source and powered by open source software. 
                     The code is available on GitHub.
                 </p> <!-- ✍️ Descripción -->
             </section>
         </main>
-        <footer>
+        <!-- ✍️ Pie de página -->
+        <footer class="p-8 flex flex-col items-center justify-center text-center mb-30">
             <!-- 🖋️ Logo principal del footer -->
-            <img src="./assets/icons/LogoDP.svg" alt="Logo DP"> <!-- 🎨 Logo representativo -->
-        
+            <img src="./assets/icons/LogoDP.svg" alt="Logo DP" class="h-40 w-auto mb-10"> <!-- 🎨 Logo representativo -->
+
             <!-- 💌 Mensaje personalizado -->
-            <div class="messege">
+            <div class="message flex items-center justify-center space-x-2 text-white text-lg">
                 <p>Cooked with love in</p> <!-- 💖 Mensaje de cariño -->
-                <img src="./assets/icons/colombia.svg" alt="Colombia Icon"> <!-- 🌎 Icono de ubicación -->
+                <img src="./assets/icons/colombia.svg" alt="Colombia Icon" class="h-6 w-auto"> <!-- 🌎 Icono de ubicación -->
                 <p>with</p> <!-- ✍️ Continuación del mensaje -->
-                <img src="./assets/icons/figmaLogo.svg" alt="Figma Icon"> <!-- 🎨 Icono de herramienta -->
+                <img src="./assets/icons/figmaLogo.svg" alt="Figma Icon" class="h-6 w-auto"> <!-- 🎨 Icono de herramienta -->
             </div>
-        
+
             <!-- 🔖 Derechos de autor -->
-            <p>© 2025 Kevin S. Angarita</p> <!-- 📜 Texto de copyright -->
+            <p class="text-gray-500 mt-4 text-sm">© 2025 Kevin S. Angarita</p> <!-- 📜 Texto de copyright -->
         </footer>
     </body>
 </html>
