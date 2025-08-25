@@ -858,3 +858,47 @@ footer {
     gap: 20px;
   }
 }
+
+@media (min-width: 760px) and (max-width: 799px) {
+  .Toolbar .items{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .section1 {
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+  }
+  .message {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1113px) {
+  .section1 {
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+  }
+  .message {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1114px) and (max-width: 1279px) {
+  .section1 {
+    flex-direction: row;
+    gap: 80px;
+  }
+  .message {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .message {
+    gap: 20px;
+  }
+}
