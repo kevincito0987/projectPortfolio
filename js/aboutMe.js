@@ -30,16 +30,60 @@ document.addEventListener("DOMContentLoaded", () => {
         which has helped me to grow my skill set and refine my abilities. Currently, if you're interested 
         in discussing how we can work together to build innovative solutions, please don't hesitate to get in touch!
     `; // ✍️ Descripción detallada
-    description.style.fontSize = "12px"; // 🔤 Fuente pequeña para mantener proporción
-    description.style.margin = "0 auto"; // 🔄 Centra horizontalmente
-    description.style.width = "60%"; // 📐 Ajusta ancho al contenido
-    description.style.lineHeight = "1.5"; // 📏 Espaciado entre líneas para legibilidad
-    description.style.textAlign = "center"; // 📖 Alineación justificada para diseño profesional
-    description.style.overflow = "hidden"; // ✂️ Oculta contenido desbordado
-    description.style.opacity = "0"; // 🕶️ Invisible por defecto
-    description.style.height = "0"; // 🔽 Altura inicial 0 para ocultar
-    description.style.transition = "opacity 0.3s ease, height 0.3s ease"; // ✨ Suavidad al mostrar/ocultar
-    myStorySection.appendChild(description); // 🔗 Añade la descripción a la caja
+
+    // 🎯 Agrega la descripción al DOM
+    myStorySection.appendChild(description);
+
+    // ✂️ Configuración inicial de visibilidad y transición para la descripción
+    description.style.lineHeight = "1.5";
+    description.style.textAlign = "center";
+    description.style.overflow = "hidden";
+    description.style.opacity = "0";
+    description.style.height = "0";
+    description.style.transition = "opacity 0.3s ease, height 0.3s ease";
+
+    // 📐 Función para actualizar los estilos de la descripción basados en el tamaño de la pantalla
+    const updateDescriptionStyles = () => {
+        if (window.matchMedia("(min-width: 1280px)").matches) {
+            // Pantallas de 1280px o más grandes
+            description.style.fontSize = "1.6rem";
+            description.style.width = "96%";
+        } else if (window.matchMedia("(min-width: 1114px) and (max-width: 1279px)").matches) {
+            // Pantallas entre 1114px y 1279px
+            description.style.fontSize = "1.2rem";
+            description.style.width = "96%";
+        } else if (window.matchMedia("(min-width: 800px) and (max-width: 1113px)").matches) {
+            // Pantallas entre 800px y 1113px
+            description.style.fontSize = "1.1rem";
+            description.style.width = "96%";
+        } else if (window.matchMedia("(min-width: 760px) and (max-width: 799px)").matches) {
+            // Pantallas entre 760px y 799px
+            description.style.fontSize = "1.1rem";
+            description.style.width = "96%";
+        } else if (window.matchMedia("(min-width: 390px) and (max-width: 440px)").matches) {
+            // Pantallas entre 390px y 440px
+            description.style.fontSize = "1.1rem";
+            description.style.width = "96%";
+        } else if (window.matchMedia("(min-width: 360px) and (max-width: 389px)").matches) {
+            // Pantallas entre 360px y 389px
+            description.style.fontSize = "1rem";
+            description.style.width = "95%";
+        } else if (window.matchMedia("(min-width: 320px) and (max-width: 359px)").matches) {
+            // Pantallas entre 320px y 359px
+            description.style.fontSize = "1rem";
+            description.style.width = "100%";
+        } else {
+            // Estilos por defecto para cualquier otro tamaño
+            description.style.fontSize = "0.8rem";
+            description.style.width = "100%";
+        }
+    };
+
+    // 🔄 Llama a la función al cargar la página
+    updateDescriptionStyles();
+
+    // 🎧 Escucha el evento de cambio de tamaño de la ventana para actualizar los estilos
+    window.addEventListener("resize", updateDescriptionStyles);
 
     // ⏳ Esconder inicialmente para evitar parpadeos
     myStorySection.style.visibility = "hidden"; // 🕶️ Inicialmente invisible

@@ -134,17 +134,19 @@ main {
 .profile {
   margin-bottom: 50px;
   width: 100%;
+  height: 100vh;
 }
 
 .MainCardTech {
   gap: 20px;
   border-radius: 20px;
-  background-image: url(../assets/images/IconsTech.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 520px;
-  width: 40%;
+  height: 90vh;
+  width: 60%;
+}
+.MainCardTech iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .frases1 {
@@ -157,14 +159,14 @@ main {
 }
 
 .MainCardTech2 {
-  gap: 100px;
+  gap: 140px;
   border-radius: 20px;
   background-image: url(../assets/images/IconsTech2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 520px;
-  width: 70%;
+  height: 90vh;
+  width: 50%;
 }
 .frases2 {
   font-family: "Inter-Bold";
@@ -181,13 +183,14 @@ main {
   margin-top: 10px;
   font-size: 2.4rem;
   color: var(--color-1);
+  margin-top: 40px;
 }
 
 /* Estilos de los botones de redes sociales */
 .socialmedia {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas iguales */
-  gap: 60px;
+  gap: 100px;
   align-items: center;
   padding: 10px;
   border-radius: 20px;
@@ -484,11 +487,6 @@ footer {
   .profile {
     margin-bottom: 5px;
     width: 100%;
-  }
-  .description {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
   }
   .work1 {
     flex-direction: column;
