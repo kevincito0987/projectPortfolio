@@ -125,10 +125,15 @@ main {
 }
 
 .work1 {
-  margin-bottom: 50px;
+  margin-top: 50px;
   gap: 20px;
   display: flex;
   flex-direction: row;
+}
+
+.profile {
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 .MainCardTech {
@@ -476,6 +481,10 @@ footer {
     gap: 20px;
     padding: 10px;
   }
+  .profile {
+    margin-bottom: 5px;
+    width: 100%;
+  }
   .description {
     display: flex;
     flex-direction: row;
@@ -484,6 +493,11 @@ footer {
   .work1 {
     flex-direction: column;
     gap: 20px; 
+  }
+  .Section2-Work {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 1500px;
   }
   .MainCardTech {
     width: 100%;
@@ -565,7 +579,7 @@ footer {
   .MacBookPro {
     width: 100%;
     height: 400px;
-    margin: 20px auto;
+    margin: -1500px 10px auto auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -573,6 +587,10 @@ footer {
   .comunications {
     padding: 5px;
     gap: 20px;
+  }
+  footer {
+    margin-top: 50px;
+    margin-bottom: 50px !important;
   }
   .message {
     gap: 20px;
@@ -659,6 +677,11 @@ footer {
   .text {
     margin-top: 20px;
   }
+  .Section2-Work {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 1500px;
+  }
   .textProjects {
     flex-direction: row;
     gap: 30px;
@@ -705,10 +728,10 @@ footer {
   .MacBookPro {
     width: 100%;
     height: 400px;
-    margin: 20px auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: -1500px;
   }
   .comunications {
     padding: 5px;
@@ -783,6 +806,11 @@ footer {
     gap: 20px; /* Ajusta el espacio entre los elementos */
     margin-top: -600px;
   }
+  .Section2-Work {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 1500px;
+  }
   .work2 {
     flex-direction: column;
     gap: 20px;
@@ -845,10 +873,10 @@ footer {
   .MacBookPro {
     width: 100%;
     height: 400px;
-    margin: 20px auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: -1500px;
   }
   .comunications {
     padding: 5px;

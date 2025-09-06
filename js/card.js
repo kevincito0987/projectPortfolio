@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     proyectos.forEach((proyecto, index) => {
         setTimeout(() => {
             const card = document.createElement("div");
-            card.classList.add("card1", "rounded-lg", "p-4", "flex", "flex-col", "items-center", "w-full", "md:w-5/12", "space-y-4", "md:space-y-0", "md:space-x-4");
+            card.classList.add("card1", "rounded-lg", "p-4", "flex", "flex-col", "md:flex-row", "items-center", "w-full", "md:w-12/12", "space-y-4", "md:space-y-0", "md:space-x-4", "lg:w-5/12");
 
             // 🏷️ Asignar ID si existe
             if (proyecto.id) {
