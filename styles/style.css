@@ -93,6 +93,10 @@ main {
   border-radius: 20px;
 }
 
+.section1:hover {
+  background-color: var(--color-39  );
+}
+
 .travel {
   background-image: url(../assets/images/Travel1.png);
   background-size: cover;
@@ -337,13 +341,13 @@ main {
 }
 
 .card-image1 {
-  background-image: url(../assets/images/project1.png);
+  background-image: url(https://github.com/kevincito0987/projectPortfolio/blob/main/assets/images/project4.png?raw=true);
 }
 .card-image2 {
-  background-image: url(../assets/images/project2.jpg);
+  background-image: url(https://corp.formula1.com/wp-content/uploads/2024/04/EA-F1-24-Standard-Cover-scaled-1.jpg);
 }
 .card-image3 {
-  background-image: url(../assets/images/Mockup.jpg);
+  background-image: url(https://play-lh.googleusercontent.com/-AImc8nS1KhdsYdkB3cjchFUXVMJGJrrw4Zjj4RhUm76dqINFiRW0_hsqGpCfiX8Yg);
 }
 
 .card1 {
@@ -358,6 +362,10 @@ main {
   transition: transform 0.3s ease;
 }
 
+.card1:hover .card-text {
+  color: var(--color-1);
+}
+
 .card-image1, .card-image2, .card-image3 {
   background-size: cover;
   background-position: center;
@@ -367,6 +375,11 @@ main {
 
 .card-content1 {
   gap: 80px;
+}
+
+.card-text {
+  font-family: "Inter-Bold";
+  font-size: 1rem;
 }
 
 .card-button {
@@ -382,7 +395,8 @@ main {
 }
 
 .card-button:hover {
-  background: var(--color-36);
+  background: var(--color-14);
+  color: var(--color-1);
 }
 
 .Frameworks {
