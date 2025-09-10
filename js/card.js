@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             titulo: "Exploring the Future of AI in Everyday Life.<br><br>This project is an intelligent chatbot for a Taekwondo school. It uses artificial intelligence to improve communication by automating responses and providing personalized information to students and parents. It demonstrates the practical integration of AI to optimize management and enhance the user experience.",
             texto: "Python, React && MySQL",
             imagenClass: "card-image1",
-            enlace: "https://github.com/kevincito0987/eCommerceClothingStore",
+            enlace: "https://github.com/Brayanestiv1/SportBot_backend.git",
             invertirOrden: true, // 📌 Indica si la imagen debe ir después del contenido
             id: "inprogress",
             imagenUrl: "https://www.infobae.com/resizer/v2/TG5KWH2QBVCL5HPTYUKTLDR23Y.jpg?auth=c8514863638a9d821a35afe6fc7a4fce7afae7d16c5214ca6fcf73bb01179e50&smart=true&width=1200&height=1200&quality=85"
