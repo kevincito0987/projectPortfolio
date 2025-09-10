@@ -102,19 +102,28 @@ Este portafolio marca el comienzo de tu huella digital en el mundo tech.
 
 Este proyecto sigue el principio de **Separación de Responsabilidades**, un patrón que organiza el código dividiendo claramente su funcionalidad en capas distintas.
 
-**🧱 Estructura de ejemplo:**
 
-```
-cssCopiarEditar/project-root
+🧱 Estructura del Portafolio:
+
+/project-Portfolio
 │
-├── index.html       ← Estructura y contenido
-├── styles/
-│   └── main.css     ← Estilos visuales
-├── scripts/
-│   └── main.js      ← Comportamientos e interacciones
-└── assets/
-    └── images/      ← Imágenes optimizadas
-```
+├── .gitignore
+├── index.html       
+├── LICENSE
+├── Readme.md
+├── assets/
+│   ├── fonts/
+│   ├── icons/
+│   └── images/
+├── js/
+│   ├── aboutMe.js
+│   ├── card.js
+│   ├── certificaciones.js
+│   ├── listas.js
+│   └── scroll.js
+└── styles/
+    ├── style.css
+    └── variables.css
 
 **✅ Aplicación práctica:**
 
