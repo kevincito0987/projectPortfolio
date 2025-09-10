@@ -102,10 +102,10 @@ Este portafolio marca el comienzo de tu huella digital en el mundo tech.
 
 Este proyecto sigue el principio de **Separación de Responsabilidades**, un patrón que organiza el código dividiendo claramente su funcionalidad en capas distintas.
 
+**🧱 Estructura del Portafolio:**
 
-🧱 Estructura del Portafolio:
-
-/project-Portfolio
+```
+/project-portafolio
 │
 ├── .gitignore
 ├── index.html       
@@ -124,6 +124,7 @@ Este proyecto sigue el principio de **Separación de Responsabilidades**, un pat
 └── styles/
     ├── style.css
     └── variables.css
+```
 
 **✅ Aplicación práctica:**
 
