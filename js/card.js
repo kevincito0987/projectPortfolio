@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
             imagenUrl: "https://www.infobae.com/resizer/v2/TG5KWH2QBVCL5HPTYUKTLDR23Y.jpg?auth=c8514863638a9d821a35afe6fc7a4fce7afae7d16c5214ca6fcf73bb01179e50&smart=true&width=1200&height=1200&quality=85"
         },
         {
-            titulo: "Immersive UI Journey Through Gaming Interfaces",
-            texto: "Personal",
+            titulo: "Interactive Communication and Learning Platform ComunicaTech.<br><br>This project is an Accessible Web Platform for individuals with Language Disorders (e.g., ASD, aphasia). It digitizes visual communication cards (PECS) with multilingual audio and personalized lessons. The technical foundation uses Laravel 11, SOLID principles, and TypeScript in the frontend, with the core purpose of leveraging a multisensory interface to promote autonomy and inclusion in communication.",
+            texto: "Laravel, Postgress, Php, Mysql, Supabase, Typescript, Postman && Tailwind Css",
             imagenClass: "card-image1",
-            enlace: "https://github.com/kevincito0987/projectConcets",
+            enlace: "https://github.com/kevincito0987/finalLaravelProject.git",
             invertirOrden: false,
             id: "future",
-            imagenUrl: "https://i.imgur.com/kWsmt3n.png"
+            imagenUrl: "https://github.com/kevincito0987/projectPortfolio/blob/main/assets/images/m2Lj5VO%20-%20Imgur.png?raw=true"
         }
     ];
 
