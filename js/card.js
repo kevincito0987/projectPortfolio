@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             enlace: "https://github.com/kevincito0987/projectConcets",
             invertirOrden: false,
             id: "future",
-            imagenUrl: "https://github.com/kevincito0987/projectPortfolio/blob/main/assets/images/project5.png?raw=true"
+            imagenUrl: "https://i.imgur.com/kWsmt3n.png"
         }
     ];
 
