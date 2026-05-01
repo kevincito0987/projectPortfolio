@@ -55,12 +55,15 @@ header {
   align-items: center;
   gap: 10px;
 }
+
 .Button:hover {
   background-color: var(--color-22); /* Fondo del botón al pasar el cursor */
 }
+
 .Header {
   gap: 60px;
 }
+
 .headerTitle h1{
   font-size: 6rem; /* Tamaño grande para el título */
   font-weight: bold;
@@ -81,11 +84,13 @@ main {
   align-items: center;
   margin: 90px;
 }
+
 .Section1 {
   width: 100%;
   max-width: 1200px;
   margin-bottom: 60px;
 }
+
 .section1 {
   background-color: var(--color-29); /* Fondo del contenedor */
   padding: 10px;
@@ -103,6 +108,7 @@ main {
   background-repeat: no-repeat;
   height: 120px;
 }
+
 .sec1-description {
   gap: 20px;
 }
@@ -116,9 +122,11 @@ main {
   gap: 100px;
   padding: 20px;
 }
+
 .linkBotones a:last-child:hover {
   background: var(--color-36);
 }
+
 .empresasCertificadoras {
   gap: 90px;
 }
@@ -147,6 +155,7 @@ main {
   height: 90vh;
   width: 60%;
 }
+
 .MainCardTech iframe {
   width: 100%;
   height: 100%;
@@ -172,6 +181,7 @@ main {
   height: 90vh;
   width: 50%;
 }
+
 .frases2 {
   font-family: "Inter-Bold";
   background: linear-gradient(90deg, #23293B 0%, rgba(37, 51, 93, 0) 100%);
@@ -232,6 +242,7 @@ main {
   background-position: center;
   border-radius: 20px;
 }
+
 .secondPart {
   height: 360px;
   width: 100%;
@@ -269,9 +280,11 @@ main {
   justify-content: center;
   padding: 15px;
 }
+
 .card-contentLinkedin a:hover {
   background: var(--color-36);
 }
+
 .fond2 {
   background:var(--color-20);
   padding: 20px;
@@ -294,6 +307,7 @@ main {
   gap: 100px;
   margin-bottom: 100px;
 }
+
 .developer {
   display: flex;
   flex-direction: column;
@@ -301,6 +315,7 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .campusLogoContainer {
   display: flex;
   flex-direction: column;
@@ -308,6 +323,7 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .campusLogoContainer img {
   height: 80px;
   width: auto;
@@ -319,6 +335,7 @@ main {
   justify-content: center;
   margin-bottom: 90px;
 }
+
 .filters a {
   text-decoration: none;
   color: var(--color-1);
@@ -328,13 +345,16 @@ main {
   transition: background 0.3s ease;
   gap: 10px;
 }
+
 .filters a:hover {
   background: var(--color-36);
 }
+
 .filters a img {
   height: 30px;
   width: auto;
 }
+
 .card-projects {
   margin: 200px 0;
   gap: 20px;
@@ -343,9 +363,11 @@ main {
 .card-image1 {
   background-image: url(https://github.com/kevincito0987/projectPortfolio/blob/main/assets/images/project4.png?raw=true);
 }
+
 .card-image2 {
   background-image: url(https://corp.formula1.com/wp-content/uploads/2024/04/EA-F1-24-Standard-Cover-scaled-1.jpg);
 }
+
 .card-image3 {
   background-image: url(https://play-lh.googleusercontent.com/-AImc8nS1KhdsYdkB3cjchFUXVMJGJrrw4Zjj4RhUm76dqINFiRW0_hsqGpCfiX8Yg);
 }
@@ -355,6 +377,7 @@ main {
   gap: 50px;
   border-radius: 20px;
 }
+
 .card1:hover {
   background: var(--color-36);
   cursor: pointer;
@@ -423,6 +446,7 @@ main {
   align-items: center;
   justify-content: center;
   display: flex;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .MacBookPro {
@@ -591,7 +615,7 @@ footer {
   .MacBookPro {
     width: 100%;
     height: 400px;
-    margin: -1500px 10px auto auto;
+    margin: 600px 10px auto auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -606,6 +630,9 @@ footer {
   }
   .message {
     gap: 20px;
+  }
+  .filters-tech button{
+    padding: 9px;
   }
 }
 
@@ -732,6 +759,7 @@ footer {
   }
   .card-projects {
     margin-top: 30px;
+    gap: 10px;
   }
   .Frameworks {
     gap: 40px;
@@ -743,7 +771,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: -1500px;
+    margin-top: 300px;
   }
   .comunications {
     padding: 5px;
@@ -751,6 +779,9 @@ footer {
   }
   .message {
     gap: 20px;
+  }
+  .filters-tech button{
+    padding: 9px;
   }
 }
 
@@ -877,6 +908,7 @@ footer {
   }
   .card-projects {
     margin-top: 30px;
+    gap: 30px;
   }
   .Frameworks {
     gap: 40px;
@@ -888,7 +920,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: -1500px;
+    margin-top: 300px;
   }
   .comunications {
     padding: 5px;
@@ -896,6 +928,9 @@ footer {
   }
   .message {
     gap: 20px;
+  }
+  .filters-tech button{
+    padding: 9px;
   }
 }
 
@@ -914,6 +949,15 @@ footer {
   .message {
     gap: 20px;
   }
+  .filters-tech button{
+    padding: 9px;
+  }
+  .card-projects{
+    gap: 30px;
+  }
+  .MacBookPro{
+    margin-left: -100px;
+  }
 }
 
 @media (min-width: 800px) and (max-width: 1113px) {
@@ -925,6 +969,15 @@ footer {
   .message {
     gap: 20px;
   }
+  .filters-tech button{
+    padding: 9px;
+  }
+  .card-projects{
+    gap: 30px;
+  }
+  .MacBookPro{
+    margin-left: -80px;
+  }
 }
 
 @media (min-width: 1114px) and (max-width: 1279px) {
@@ -934,6 +987,23 @@ footer {
   }
   .message {
     gap: 20px;
+  }
+  .Header h3 {
+    font-size: 1rem;
+    margin-top: -50px;
+  }
+  .Header p {
+    font-size: 1rem;
+    margin-top: -40px;
+  }
+  .card-projects{
+    gap: 30px;
+  }
+  .filters-tech button{
+    padding: 20px;
+  }
+  .MacBookPro{
+    margin-top: 80px;
   }
 }
 
@@ -954,5 +1024,8 @@ footer {
   }
   .card-content1{
     gap: -20px;
+  }
+  .filters-tech button {
+    padding: 10px;
   }
 }
